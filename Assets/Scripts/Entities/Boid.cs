@@ -80,11 +80,11 @@ public abstract class Boid : MonoBehaviour
   /// <summary>
   /// Getter and Setter of the speed of the boid
   /// </summary>
-  public float Speed
-  {
-    get { return m_v2Velocity.magnitude; }
-    set { m_v2Velocity = m_v2Velocity.normalized * value; }
-  }
+//   public float Speed
+//   {
+//     get { return m_v2Velocity.magnitude; }
+//     set { m_v2Velocity = m_v2Velocity.normalized * value; }
+//   }
 
   /// <summary>
   /// Getter of the last position of the boid
