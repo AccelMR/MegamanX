@@ -14,6 +14,7 @@ class MMJumpState : State<Megaman>
 
   public override void OnStateEnter(Megaman entity)
   {
+    entity.setAnim(ANIM_STATE.JUMP);
     m_timeJumping = entity.JumpTime;
   }
 
@@ -29,13 +30,16 @@ class MMJumpState : State<Megaman>
 
     entity.VelocityY = entity.JumpForce;
     entity.VelocityX = dirX * entity.Speed;
+    entity.DirectionX = dirX;
+
   }
 
   public override void OnStateUpdate(Megaman entity)
   {
     var dirX = Input.GetAxisRaw("Horizontal");
+    entity.DirectionX = dirX;
 
-    if(Input.GetButton("Jump") && m_timeJumping > 0.0f)
+    if (Input.GetButton("Jump") && m_timeJumping > 0.0f)
     {
       entity.VelocityY = entity.JumpForce;
       entity.VelocityX = dirX * entity.Speed;

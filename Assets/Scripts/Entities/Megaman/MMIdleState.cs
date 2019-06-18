@@ -9,6 +9,7 @@ class MMIdleState : State<Megaman>
 
   public override void OnStateEnter(Megaman character)
   {
+    character.setAnim(ANIM_STATE.IDLE);
   }
 
   public override void OnStatePreUpdate(Megaman entity)
@@ -18,7 +19,7 @@ class MMIdleState : State<Megaman>
   public override void OnStateUpdate(Megaman entity)
   {
     // Check inputs every time
-    if (Input.GetButtonDown("Jump"))
+    if (Input.GetButtonDown("Jump") && entity.IsGrounded)
     {
       m_pStateMachine.ToState(entity.jumpState, entity);
     }

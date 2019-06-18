@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 4253648966557690748}
   - component: {fileID: 11722175254490568}
   - component: {fileID: 7853993766870943027}
-  - component: {fileID: 7853993766870943024}
+  - component: {fileID: 3612648872837286560}
   m_Layer: 0
   m_Name: Megaman
   m_TagString: Untagged
@@ -148,8 +148,9 @@ MonoBehaviour:
   interpolateMovement: 0
   m_speed: 3
   m_gravity: 0
-  m_jumpTime: 10
+  m_jumpTime: 15
   m_jumpForce: 10
+  m_isGround: 0
 --- !u!50 &7853993766870943027
 Rigidbody2D:
   serializedVersion: 4
@@ -171,8 +172,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &7853993766870943024
-BoxCollider2D:
+--- !u!70 &3612648872837286560
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -185,15 +186,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.02, y: 0.34}
+  m_Direction: 0
