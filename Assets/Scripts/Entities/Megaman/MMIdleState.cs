@@ -9,16 +9,18 @@ class MMIdleState : State<Megaman>
 
   public override void OnStateEnter(Megaman character)
   {
-    throw new System.NotImplementedException();
   }
 
   public override void OnStatePreUpdate(Megaman entity)
   {
-    throw new System.NotImplementedException();
   }
 
   public override void OnStateUpdate(Megaman entity)
   {
-    throw new System.NotImplementedException();
+    // Check inputs everytime
+    if (Input.GetButtonDown("Jump"))
+    {
+      m_pStateMachine.ToState(entity.jumpState, entity);
+    }
   }
 }

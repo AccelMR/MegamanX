@@ -4,6 +4,8 @@ using UnityEngine;
 
 partial class Megaman : Boid
 {
+  public float m_direction;
+
   private void Awake()
   {
     //Initialize State Machine

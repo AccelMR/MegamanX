@@ -11,7 +11,8 @@ partial class Megaman : Boid
   /// States declarations will be here
   /// </summary>
   public MMIdleState idleState;
-
+  public MMJumpState jumpState;
+  public MMMoveState moveState;
   /// <summary>
   /// Initialize State Machine and all states
   /// </summary>
@@ -20,7 +21,8 @@ partial class Megaman : Boid
     m_stateMachine = new StateMachine<Megaman>();
 
     idleState = new MMIdleState(m_stateMachine);
-
+    jumpState = new MMJumpState(m_stateMachine);
+    moveState = new MMMoveState(m_stateMachine);
     /// First state, or initial state
     m_stateMachine.Init(idleState);
   }
