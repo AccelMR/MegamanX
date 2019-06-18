@@ -13,6 +13,13 @@ class MMMoveState : State<Megaman>
 
   public override void OnStateUpdate(Megaman entity)
   {
-    entity.VelocityX += .2f;
+    float dir = Input.GetAxisRaw("Horizontal");
+
+    if(dir == 0.0f)
+    {
+      m_pStateMachine.ToState(entity.idleState, entity);
+    }
+
+    entity.VelocityX = dir * entity.Speed;
   }
 }

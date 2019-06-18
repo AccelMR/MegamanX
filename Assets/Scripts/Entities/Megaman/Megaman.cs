@@ -4,7 +4,14 @@ using UnityEngine;
 
 partial class Megaman : Boid
 {
-  public float m_direction;
+  [SerializeField]
+  private float m_speed;
+  public float Speed{get{ return m_speed; }}
+
+  [SerializeField]
+  private float m_gravity;
+  public float Gravity { get { return m_gravity; }  }
+
 
   private void Awake()
   {

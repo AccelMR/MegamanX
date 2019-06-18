@@ -14,6 +14,7 @@ class MMJumpState : State<Megaman>
 
   public override void OnStateUpdate(Megaman entity)
   {
-    Debug.Log("X cosa");
+
+
   }
 }

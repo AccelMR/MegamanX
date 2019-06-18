@@ -17,10 +17,15 @@ class MMIdleState : State<Megaman>
 
   public override void OnStateUpdate(Megaman entity)
   {
-    // Check inputs everytime
+    // Check inputs every time
     if (Input.GetButtonDown("Jump"))
     {
       m_pStateMachine.ToState(entity.jumpState, entity);
+    }
+
+    if(Input.GetAxisRaw("Horizontal") != 0)
+    {
+      m_pStateMachine.ToState(entity.moveState, entity);
     }
   }
 }
