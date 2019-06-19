@@ -17,7 +17,11 @@ class MMMoveState : State<Megaman>
     float dir = Input.GetAxisRaw("Horizontal");
     entity.VelocityX = dir * entity.Speed;
     entity.DirectionX = dir;
-    if (dir == 0.0f)
+    if(!entity.IsGrounded)
+    {
+      m_pStateMachine.ToState(entity.fallState, entity);
+    }
+    else if (dir == 0.0f)
     {
       m_pStateMachine.ToState(entity.idleState, entity);
     }

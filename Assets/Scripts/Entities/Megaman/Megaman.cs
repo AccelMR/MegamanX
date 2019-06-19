@@ -8,6 +8,7 @@ using UnityEngine;
     IDLE,
     MOVE,
     JUMP,
+    FALL,
     JUMP_ATTACK,
     ATTACK,
     DIE
@@ -25,13 +26,6 @@ partial class Megaman : Boid
   public float Speed { get { return m_speed; } }
 
   /// <summary>
-  /// gravity applied just when is not grounded
-  /// </summary>
-  [SerializeField]
-  private float m_gravity;
-  public float Gravity { get { return m_gravity; } }
-
-  /// <summary>
   /// how much time mega man will be on air
   /// </summary>
   [SerializeField]
@@ -42,8 +36,8 @@ partial class Megaman : Boid
   /// how much mega man will jump
   /// </summary>
   [SerializeField]
-  private float m_jumpForce;
-  public float JumpForce { get { return m_jumpForce; } }
+  private float m_maxJump;
+  public float MaxJump { get { return m_maxJump; } }
 
   /// <summary>
   /// collider
@@ -78,20 +72,6 @@ partial class Megaman : Boid
   /// self animator
   /// </summary>
   private Animator m_animator;
-
-  /// <summary>
-  /// is looking right varibale
-  /// </summary>
-//   private bool m_isLookingRight;
-//   public bool IsLookingRight
-//   {
-//     get { return m_isLookingRight; }
-//     internal set
-//     {
-//       m_isLookingRight = value;
-//       TurnSprite();
-//     }
-//   }
 
   private float m_directionX;
   public float DirectionX
