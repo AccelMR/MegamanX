@@ -11,6 +11,7 @@ class MMIdleState : State<Megaman>
   {
     Debug.Log("Idle state");
     character.setAnim(ANIM_STATE.IDLE);
+    character.VelocityX = 0.0f;
   }
 
   public override void OnStatePreUpdate(Megaman entity)
@@ -19,6 +20,7 @@ class MMIdleState : State<Megaman>
 
   public override void OnStateUpdate(Megaman entity)
   {
+    entity.VelocityX = 0.0f;
 
     // Check inputs every time
     if (Input.GetButtonDown("Jump") && entity.IsGrounded)
