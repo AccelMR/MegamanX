@@ -16,7 +16,7 @@ using UnityEngine;
 
 partial class Megaman : Boid
 {
-
+  
 
   /// <summary>
   /// how fast mega man will move on horizontal direction

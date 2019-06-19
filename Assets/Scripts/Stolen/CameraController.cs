@@ -15,7 +15,7 @@ public class CameraController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		playerLoc = GameObject.Find("MegaMan").GetComponent<Transform>();
+		playerLoc = GameObject.Find("Megaman").GetComponent<Transform>();
 		//camPanSpeed = 3.5f;
 		waitTime += Time.time;
 		camPosition = Camera.main.GetComponent<Transform>();
