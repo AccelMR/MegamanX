@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: 65f2602db0033b84685d9aa0259eeb84
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5348660363241712098
+    second: megaman_x1_intro_stage_by_darksamus993_0
+  - first:
+      213: -6101447589301972089
+    second: megaman_x1_intro_stage_by_darksamus993_1
+  - first:
+      213: 6421628345604193714
+    second: megaman_x1_intro_stage_by_darksamus993_2
+  - first:
+      213: 4374904027516066961
+    second: megaman_x1_intro_stage_by_darksamus993_3
+  - first:
+      213: 4251335370905595815
+    second: megaman_x1_intro_stage_by_darksamus993_4
+  - first:
+      213: 4570552022785024487
+    second: megaman_x1_intro_stage_by_darksamus993_5
+  - first:
+      213: -4562675503394619019
+    second: megaman_x1_intro_stage_by_darksamus993_6
+  - first:
+      213: 1964243920613128644
+    second: megaman_x1_intro_stage_by_darksamus993_7
+  - first:
+      213: 8726078704059879262
+    second: megaman_x1_intro_stage_by_darksamus993_8
+  - first:
+      213: 626689018422714742
+    second: megaman_x1_intro_stage_by_darksamus993_9
+  - first:
+      213: -1201117363891669762
+    second: megaman_x1_intro_stage_by_darksamus993_10
+  - first:
+      213: 9110469558507314053
+    second: megaman_x1_intro_stage_by_darksamus993_11
+  - first:
+      213: 3343861645777298967
+    second: megaman_x1_intro_stage_by_darksamus993_12
+  - first:
+      213: -4088005032775880643
+    second: megaman_x1_intro_stage_by_darksamus993_13
+  - first:
+      213: 1499211758494631756
+    second: megaman_x1_intro_stage_by_darksamus993_14
+  - first:
+      213: -613250019188058121
+    second: megaman_x1_intro_stage_by_darksamus993_15
+  - first:
+      213: -4644886912920085159
+    second: megaman_x1_intro_stage_by_darksamus993_16
+  - first:
+      213: 4990574315351045571
+    second: megaman_x1_intro_stage_by_darksamus993_17
+  - first:
+      213: 1673134790690910576
+    second: megaman_x1_intro_stage_by_darksamus993_18
+  - first:
+      213: 2289733275524680674
+    second: megaman_x1_intro_stage_by_darksamus993_19
+  - first:
+      213: 2231854518686146389
+    second: megaman_x1_intro_stage_by_darksamus993_20
+  - first:
+      213: 2282642163796972026
+    second: megaman_x1_intro_stage_by_darksamus993_21
+  - first:
+      213: 6285850614395281031
+    second: megaman_x1_intro_stage_by_darksamus993_22
+  - first:
+      213: 7781066560900622240
+    second: megaman_x1_intro_stage_by_darksamus993_23
+  - first:
+      213: -6805887483017004823
+    second: megaman_x1_intro_stage_by_darksamus993_24
+  - first:
+      213: 2388425689373275838
+    second: megaman_x1_intro_stage_by_darksamus993_25
+  - first:
+      213: 4403641269035207376
+    second: megaman_x1_intro_stage_by_darksamus993_26
+  - first:
+      213: -4588627124929565283
+    second: megaman_x1_intro_stage_by_darksamus993_27
+  - first:
+      213: -3559483390687842512
+    second: megaman_x1_intro_stage_by_darksamus993_28
+  - first:
+      213: 1594841639280670039
+    second: megaman_x1_intro_stage_by_darksamus993_29
+  - first:
+      213: 3193175074628599742
+    second: megaman_x1_intro_stage_by_darksamus993_30
+  - first:
+      213: -1450813919839163511
+    second: megaman_x1_intro_stage_by_darksamus993_31
+  - first:
+      213: -1589141429388651812
+    second: megaman_x1_intro_stage_by_darksamus993_32
+  - first:
+      213: -2836365225698543302
+    second: megaman_x1_intro_stage_by_darksamus993_33
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: megaman_x1_intro_stage_by_darksamus993_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 7689
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98090ad7f216b434ab233a1d053b25bd
+      internalID: 5348660363241712098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 623b1ebed41611b46a6b752672760cbb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,18 +5,8 @@
 /// </summary>
 public abstract class Boid : MonoBehaviour
 {
-  public enum MOV_INTEGRATION_TYPE
-  {
-    EULER = 0,
-    VERLET
-  }
-
   /*public float m_fMaxSpeed;
   public float m_fMaxForce;*/
-
-  /*protected float m_fMass;*/
-  [SerializeField]
-  protected MOV_INTEGRATION_TYPE m_eMovementIntegrationType;
 
   [SerializeField]
   protected bool interpolateMovement;
@@ -90,11 +80,11 @@ public abstract class Boid : MonoBehaviour
   /// <summary>
   /// Getter and Setter of the speed of the boid
   /// </summary>
-  public float Speed
-  {
-    get { return m_v2Velocity.magnitude; }
-    set { m_v2Velocity = m_v2Velocity.normalized * value; }
-  }
+//   public float Speed
+//   {
+//     get { return m_v2Velocity.magnitude; }
+//     set { m_v2Velocity = m_v2Velocity.normalized * value; }
+//   }
 
   /// <summary>
   /// Getter of the last position of the boid
@@ -118,34 +108,8 @@ public abstract class Boid : MonoBehaviour
   /// </summary>
   protected void Move()
   {
-    if (Velocity != Vector2.zero)
-    {
-      // Integrate movement
-      switch (m_eMovementIntegrationType)
-      {
-        case MOV_INTEGRATION_TYPE.EULER:
-          EulerIntegration();
-          break;
-        case MOV_INTEGRATION_TYPE.VERLET:
-          VerletIntegration();
-          break;
-      }
-    }
-  }
-
-  private void EulerIntegration()
-  {
     m_v2LastPosition = transform.position;
     m_v2Velocity += m_v2TotalForce * Time.fixedDeltaTime;
     transform.position += (Vector3)m_v2Velocity * Time.fixedDeltaTime;
-  }
-
-  private void VerletIntegration()
-  {
-    //TODO: Ask Prof. Prince whether to use this or not
-    // Vector2 v2Temp = tranform.position;
-    // tranform.position *= 2.0f; // TODO: add an extra 
-    // tranform.position
-    // tranform.position - m_v2LastPosition + m_v2TotalForce * Time.fixedDeltaTime * Time.fixedDeltaTime / 2.0f;
   }
 }
