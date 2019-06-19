@@ -2751,7 +2751,7 @@ PrefabInstance:
     - target: {fileID: 11722175254490568, guid: f532e26b41c07b54f83cdc06e04cd4b3,
         type: 3}
       propertyPath: m_speed
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 11722175254490568, guid: f532e26b41c07b54f83cdc06e04cd4b3,
         type: 3}
@@ -2766,7 +2766,7 @@ PrefabInstance:
     - target: {fileID: 11722175254490568, guid: f532e26b41c07b54f83cdc06e04cd4b3,
         type: 3}
       propertyPath: m_maxJump
-      value: 0.5
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 7853993766870943027, guid: f532e26b41c07b54f83cdc06e04cd4b3,
         type: 3}
@@ -2787,6 +2787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4986375637871079757, guid: f532e26b41c07b54f83cdc06e04cd4b3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.342
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f532e26b41c07b54f83cdc06e04cd4b3, type: 3}
