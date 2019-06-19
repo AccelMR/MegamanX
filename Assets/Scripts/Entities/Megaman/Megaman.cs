@@ -85,6 +85,12 @@ partial class Megaman : Boid
     }
   }
 
+  /// <summary>
+  /// Debug stuff
+  /// </summary>
+  public float airTime = 0;
+
+
   private void Awake()
   {
     m_collider = GetComponent<CapsuleCollider2D>();
