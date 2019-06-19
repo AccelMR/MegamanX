@@ -146,10 +146,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interpolateMovement: 0
-  m_speed: 3
-  m_gravity: 0
-  m_jumpTime: 15
-  m_jumpForce: 10
+  m_speed: 1
+  m_jumpTime: 10
+  m_maxJump: 0.085
   m_isGround: 0
 --- !u!50 &7853993766870943027
 Rigidbody2D:
@@ -165,8 +164,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0.01
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
