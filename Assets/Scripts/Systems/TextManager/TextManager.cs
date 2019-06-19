@@ -72,7 +72,7 @@ public class TextManager : MonoBehaviour
     {
         m_initialTextPosition = m_text.transform.position;
 
-        //Hacer una nueva escena
+        //ejemplos de construccion de dialogos
         escenas[0].dialogos = new Dialogo[1];//cuantos dialogos va a tener
         escenas[0].dialogos[0] = new Dialogo(m_avatars[1], "You worthless piece\nof scrap metal, did\nyou think you\ncould defeat me?", 4, 0, false);//Creacion del dialogo
 
