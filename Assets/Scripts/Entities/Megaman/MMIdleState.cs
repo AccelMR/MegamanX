@@ -9,6 +9,7 @@ class MMIdleState : State<Megaman>
 
   public override void OnStateEnter(Megaman character)
   {
+    Debug.Log("Idle state");
     character.setAnim(ANIM_STATE.IDLE);
   }
 
@@ -18,6 +19,7 @@ class MMIdleState : State<Megaman>
 
   public override void OnStateUpdate(Megaman entity)
   {
+
     // Check inputs every time
     if (Input.GetButtonDown("Jump") && entity.IsGrounded)
     {

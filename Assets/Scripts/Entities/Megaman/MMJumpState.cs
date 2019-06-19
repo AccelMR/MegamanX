@@ -9,13 +9,16 @@ class MMJumpState : State<Megaman>
   /// </summary>
   private float m_timeJumping;
 
+  private Vector3 m_startPos;
+
   public MMJumpState(StateMachine<Megaman> stateMachine)
     :base(stateMachine) { }
 
   public override void OnStateEnter(Megaman entity)
   {
     entity.setAnim(ANIM_STATE.JUMP);
-    m_timeJumping = entity.JumpTime;
+    m_timeJumping = 1.0f;
+    m_startPos = entity.Position;
   }
 
   public override void OnStateExit(Megaman entity)
@@ -28,7 +31,6 @@ class MMJumpState : State<Megaman>
   {
     var dirX = Input.GetAxisRaw("Horizontal");
 
-    entity.VelocityY = entity.JumpForce;
     entity.VelocityX = dirX * entity.Speed;
     entity.DirectionX = dirX;
 
@@ -39,17 +41,25 @@ class MMJumpState : State<Megaman>
     var dirX = Input.GetAxisRaw("Horizontal");
     entity.DirectionX = dirX;
 
-    if (Input.GetButton("Jump") && m_timeJumping > 0.0f)
+    if (Input.GetButton("Jump"))
     {
-      entity.VelocityY = entity.JumpForce;
-      entity.VelocityX = dirX * entity.Speed;
-      
-      /// reduce time
-      m_timeJumping--;
+      m_timeJumping -= Time.fixedDeltaTime;
+
+      float normTime = Mathf.Clamp01(m_timeJumping);
+      float lapse = Mathf.Pow(normTime, 2);
+
+      float yPos = Mathf.Lerp(0, entity.MaxJump, normTime);
+      entity.transform.position += new Vector3(0, yPos, 0);
+
+//       entity.VelocityY = entity.JumpForce;
+//       entity.VelocityX = dirX * entity.Speed;
+//       
+//       /// reduce time
+//       m_timeJumping--;
     }
     else
-    {//TODO: shouldn't go to this state, just for proves
-      m_pStateMachine.ToState(entity.moveState , entity);
+    {
+      m_pStateMachine.ToState(entity.fallState , entity);
     }
 
 
