@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13656aa7f9b8cac43b2cca5b7ab94eda, type: 3}
-  m_Name: Ball De Voux
+  m_Name: Road Attackers
   m_EditorClassIdentifier: 
-  name: Ball De Voux
-  item: {fileID: 2841394365223461726, guid: eb6b1d3172f40d740869e28e2baf392b, type: 3}
-  description: Un ojo con patas.
-  health: 4
-  damage: 3
+  name: Road Attackers
+  item: {fileID: 0}
+  description: Carro rojo que dispara misil
+  health: 7
+  damage: 4
