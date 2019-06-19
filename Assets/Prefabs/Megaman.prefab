@@ -148,8 +148,9 @@ MonoBehaviour:
   interpolateMovement: 0
   m_speed: 1
   m_jumpTime: 10
-  m_maxJump: 0.085
+  m_maxJump: 0.15
   m_isGround: 0
+  airTime: 0
 --- !u!50 &7853993766870943027
 Rigidbody2D:
   serializedVersion: 4
