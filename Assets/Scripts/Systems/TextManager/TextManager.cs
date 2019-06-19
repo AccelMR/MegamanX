@@ -59,6 +59,7 @@ public class TextManager : MonoBehaviour
     bool endDialog = false;
     bool closingDialog = false;
     bool isFast = false;
+    bool canChange = false;
 
     bool cantalk = true;
 
@@ -84,6 +85,9 @@ public class TextManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        currentScene = Mathf.Clamp(currentScene, 0, escenas.Length);
+        Debug.Log(currentScene);
+
         if (Input.GetKeyDown(KeyCode.Alpha1)) //aqui poner lo que sea que active el dialogo
         {
             m_panel.enabled = false;
@@ -99,12 +103,12 @@ public class TextManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            if (endDialog)//si ya termino de mostrar lso dialogos y el jugador presiona X. cerrar el dialogo
+            if (endDialog && !canChange)//si ya termino de mostrar lso dialogos y el jugador presiona X. cerrar el dialogo
             {
+                canChange = true;
                 if (escenas[currentScene].currentDialog == escenas[currentScene].dialogos.Length -1)
                 {
                     StartCoroutine(closeDialog());
-                    currentScene++;
                 }
                 else //avanzar al sig dialogo
                 {
@@ -204,6 +208,7 @@ public class TextManager : MonoBehaviour
         }
         m_flecha.gameObject.SetActive(true);//cuando acabe de mostrar todo el dialogo activar la flecha para cerrar o continuar al sig dialogo
         endDialog = true;
+        canChange = false;
     }
 
     IEnumerator closeDialog()
@@ -225,6 +230,7 @@ public class TextManager : MonoBehaviour
         m_panel.enabled = false;
         m_text.text = "";
         m_text.transform.position = m_initialTextPosition;
+        currentScene++;
     }
 
     IEnumerator nextDialog(Dialogo dialog, bool keepPanel)
@@ -279,5 +285,6 @@ public class TextManager : MonoBehaviour
         }
         m_flecha.gameObject.SetActive(true);//cuando acabe de mostrar todo el dialogo activar la flecha para cerrar o continuar al sig dialogo
         endDialog = true;
+        canChange = false;
     }
 }
