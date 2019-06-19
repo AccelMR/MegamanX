@@ -2750,38 +2750,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11722175254490568, guid: f532e26b41c07b54f83cdc06e04cd4b3,
         type: 3}
-      propertyPath: m_speed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11722175254490568, guid: f532e26b41c07b54f83cdc06e04cd4b3,
-        type: 3}
-      propertyPath: m_jumpTime
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11722175254490568, guid: f532e26b41c07b54f83cdc06e04cd4b3,
-        type: 3}
       propertyPath: m_jumpForce
       value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11722175254490568, guid: f532e26b41c07b54f83cdc06e04cd4b3,
-        type: 3}
-      propertyPath: m_maxJump
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853993766870943027, guid: f532e26b41c07b54f83cdc06e04cd4b3,
-        type: 3}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853993766870943027, guid: f532e26b41c07b54f83cdc06e04cd4b3,
-        type: 3}
-      propertyPath: m_GravityScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853993766870943027, guid: f532e26b41c07b54f83cdc06e04cd4b3,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6085597881191673162, guid: f532e26b41c07b54f83cdc06e04cd4b3,
         type: 3}

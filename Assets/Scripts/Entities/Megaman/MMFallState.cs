@@ -21,17 +21,23 @@ class MMFallState : State<Megaman>
 
   public override void OnStatePreUpdate(Megaman entity)
   {
-    var dirX = Input.GetAxisRaw("Horizontal");
-    entity.DirectionX = dirX;
-
     if (entity.IsGrounded)
     {
       m_pStateMachine.ToState(entity.idleState, entity);
     }
+
+    var dirX = Input.GetAxisRaw("Horizontal");
+    entity.DirectionX = dirX;
+
   }
 
   public override void OnStateUpdate(Megaman entity)
   {
+    if (entity.IsGrounded)
+    {
+      m_pStateMachine.ToState(entity.idleState, entity);
+    }
+
     var dirX = Input.GetAxisRaw("Horizontal");
     entity.DirectionX = dirX;
 
@@ -43,9 +49,5 @@ class MMFallState : State<Megaman>
     float yPos = Mathf.Lerp(0, entity.MaxJump, normTime);
     entity.transform.position += new Vector3(0, -yPos, 0);
 
-    if (entity.IsGrounded)
-    {
-      m_pStateMachine.ToState(entity.idleState, entity);
-    }
   }
 }
