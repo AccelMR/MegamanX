@@ -13,8 +13,8 @@ public class Limites : MonoBehaviour
     void Start()
     {
         Screen_Bounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
-        Object_Width = transform.GetComponent<SpriteRenderer>().bounds.size.x / 2;
-        Object_Height = transform.GetComponent<SpriteRenderer>().bounds.size.y / 2;
+        //Object_Width = transform.GetComponent<SpriteRenderer>().bounds.size.x / 2;
+        //Object_Height = transform.GetComponent<SpriteRenderer>().bounds.size.y / 2;
     }
 
     // Update is called once per frame

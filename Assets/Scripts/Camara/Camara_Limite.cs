@@ -17,7 +17,7 @@ public class Camara_Limite : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Mega_Man = GameObject.FindGameObjectWithTag("Man");
+        Mega_Man = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
