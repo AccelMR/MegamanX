@@ -112,7 +112,7 @@ partial class Megaman : Boid
   private void Awake()
   {
     m_collider = GetComponent<CapsuleCollider2D>();
-    m_floor = LayerMask.GetMask("Ground");
+    m_floor = LayerMask.GetMask("Level");
     m_wall = LayerMask.GetMask("Wall");
     m_animator = GetComponentInChildren<Animator>();
     m_timeShootBtnPressed = 0;
