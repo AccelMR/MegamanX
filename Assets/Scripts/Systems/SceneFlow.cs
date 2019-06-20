@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class SceneFlow : MonoBehaviour
 {
-    public Image Puntero;
+    public Image MegamanPuntero;
     public Image Blast;
     public Image FadeOut;
     public Font fontBlue;
@@ -33,9 +34,29 @@ public class SceneFlow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentSceneName == "MenuScene")
+        if (currentSceneName == "MenuScene")//si est en la escena del menu
         {
             Menu();
+
+            if (Blast.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("blast") && Blast.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+            {
+                rechargeBlast();
+                rechargeAnim();
+            }
+        }
+        if (currentSceneName == "Intro1")
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                StartCoroutine(ChangeScene("Intro2"));
+            }
+        }
+        if (currentSceneName == "Intro2")
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                StartCoroutine(ChangeScene("MenuScene"));
+            }
         }
     }
 
@@ -53,7 +74,7 @@ public class SceneFlow : MonoBehaviour
             {
                 menuIndex = 2;
             }
-            Puntero.transform.localPosition = positions[menuIndex];
+            MegamanPuntero.transform.localPosition = positions[menuIndex];
             menuTexts[menuIndex].font = fontOrange;
         }
         if (Input.GetKeyDown(KeyCode.UpArrow)) //Aqui reemplazar por el nuevo input
@@ -69,18 +90,19 @@ public class SceneFlow : MonoBehaviour
                 menuIndex = 2;
             }
             menuTexts[menuIndex].font = fontOrange;
-            Puntero.transform.localPosition = positions[menuIndex];
+            MegamanPuntero.transform.localPosition = positions[menuIndex];
         }
 
         if (Input.GetKeyDown(KeyCode.Return))//aqui poner el input de boton de start
         {
-            Puntero.GetComponent<Animator>().enabled = true;
-            Blast.GetComponent<Animator>().enabled = true;
+            MegamanPuntero .GetComponent<Animator>().SetBool("start", true);
+            Blast.GetComponent<Animator>().SetBool("start", true);
+            Blast.enabled = true;
             switch (menuIndex)
             {
                 case 0://start
                     {
-                        StartCoroutine(ChangeScene("MainGame"));
+                        StartCoroutine(ChangeScene("MainGame", 0.4f));
                         break;
                     }
                 case 1://password codes
@@ -95,10 +117,22 @@ public class SceneFlow : MonoBehaviour
         }
     }
 
-    IEnumerator ChangeScene(string sceneName)
+    IEnumerator ChangeScene(string sceneName, float delay = 0)
     {
+        yield return new WaitForSeconds(delay);//esperar a que el blast salga de la pantalla
         FadeOut.GetComponent<Animator>().enabled = true;//animar fade out
-        yield return new WaitForSeconds(1.0f);
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        yield return new WaitForSeconds(1.0f);//esperar a la animacion de fadeOut
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);//cargar escena
+    }
+
+    void rechargeBlast()
+    {
+        Blast.GetComponent<Animator>().SetBool("start", false);
+        Blast.enabled = false;
+    }
+
+    void rechargeAnim()
+    {
+        MegamanPuntero.GetComponent<Animator>().SetBool("start", false);
     }
 }
