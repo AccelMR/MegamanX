@@ -16,7 +16,7 @@ using UnityEngine;
 
 partial class Megaman : Boid
 {
-
+  
 
   /// <summary>
   /// how fast mega man will move on horizontal direction
@@ -88,7 +88,7 @@ partial class Megaman : Boid
   private void Awake()
   {
     m_collider = GetComponent<CapsuleCollider2D>();
-    m_floor = LayerMask.GetMask("Ground");
+    m_floor = LayerMask.GetMask("Level");
     m_animator = GetComponentInChildren<Animator>();
 
     //Initialize State Machine
