@@ -11,6 +11,7 @@ using UnityEngine;
     FALL,
     JUMP_ATTACK,
     ATTACK,
+    MOVE_ATTACK,
     DIE
   }
 
@@ -66,7 +67,12 @@ partial class Megaman : Boid
   private bool m_isGround;
   public bool IsGrounded { get { return m_isGround; } }
 
+  [SerializeField]
+  private bool m_isWalled;
+  public bool IsWalled { get { return m_isWalled; } }
+
   private LayerMask m_floor;
+  private LayerMask m_wall;
 
   /// <summary>
   /// self animator
@@ -95,6 +101,7 @@ partial class Megaman : Boid
   {
     m_collider = GetComponent<CapsuleCollider2D>();
     m_floor = LayerMask.GetMask("Ground");
+    m_wall = LayerMask.GetMask("Wall");
     m_animator = GetComponentInChildren<Animator>();
 
     //Initialize State Machine
@@ -118,6 +125,7 @@ partial class Megaman : Boid
   private void updateGrounded()
   {
     m_isGround = m_collider.IsTouchingLayers(m_floor);
+    m_isWalled = m_collider.IsTouchingLayers(m_wall);
   }
 
   public void setAnim(ANIM_STATE state)
@@ -131,6 +139,25 @@ partial class Megaman : Boid
     transform.GetChild(0).localScale = scale;
     scale.x = Mathf.Abs(scale.x) * m_directionX;
     transform.GetChild(0).localScale = scale;
+  }
+
+  public void shoot(float time)
+  {
+    if(time >= 0.0f && time < 1.0f)
+    {
+      //TODO: handle single shoot
+      Debug.Log("Single shoot");
+    }
+    if(time > 1.0f && time < 2.5f)
+    {
+      //TODO: handle second shoot
+      Debug.Log("Second shoot");
+    }
+    if(time > 2.5)
+    {
+      //TODO: handle massive shoot
+      Debug.Log("Third shoot");
+    }
   }
 
 }

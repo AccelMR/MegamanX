@@ -23,4 +23,5 @@ class MMSpawnState : State<Megaman>
   public override void OnStateExit(Megaman entity)
   {
   }
+
 }
