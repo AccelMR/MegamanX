@@ -1111,12 +1111,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631355853}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 56.14, y: -1.35, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1036069731}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &975002084
 GameObject:
@@ -1149,6 +1149,7 @@ Transform:
   - {fileID: 1380954160}
   - {fileID: 421419963}
   - {fileID: 444549271}
+  - {fileID: 1409620185}
   - {fileID: 1922088457}
   - {fileID: 1036069731}
   - {fileID: 1902465410}
@@ -1311,8 +1312,9 @@ Transform:
   m_Children:
   - {fileID: 1103430843}
   - {fileID: 1125216533}
+  - {fileID: 631355855}
   m_Father: {fileID: 975002085}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1047565564
 PrefabInstance:
@@ -1855,7 +1857,7 @@ GameObject:
   - component: {fileID: 1409620184}
   - component: {fileID: 1409620186}
   m_Layer: 9
-  m_Name: megaman_x1_intro_stage_by_darksamus993_4096 copy_7
+  m_Name: intro_stage_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1917,12 +1919,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409620183}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 49.95, y: -3.132, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 975002085}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1409620186
 BoxCollider2D:
@@ -2166,7 +2168,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 975002085}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1922088456
 GameObject:
@@ -2196,7 +2198,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 975002085}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1987340424
 GameObject:
@@ -2481,12 +2483,12 @@ PrefabInstance:
     - target: {fileID: 4253648966557690748, guid: f532e26b41c07b54f83cdc06e04cd4b3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 52.7
+      value: 3.43
       objectReference: {fileID: 0}
     - target: {fileID: 4253648966557690748, guid: f532e26b41c07b54f83cdc06e04cd4b3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.32
+      value: 4.74
       objectReference: {fileID: 0}
     - target: {fileID: 4253648966557690748, guid: f532e26b41c07b54f83cdc06e04cd4b3,
         type: 3}
