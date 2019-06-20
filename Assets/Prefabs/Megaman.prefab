@@ -151,6 +151,8 @@ MonoBehaviour:
   m_maxJump: 0.142
   m_isGround: 0
   m_isWalled: 0
+  m_timeShootBtnPressed: 0
+  m_bullets: []
   airTime: 0
 --- !u!50 &7853993766870943027
 Rigidbody2D:

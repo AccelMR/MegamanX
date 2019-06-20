@@ -41,7 +41,7 @@ public class Bullet : MonoBehaviour
 
   public void beeingShot(Vector3 characterPos, float dir)
   {
-    transform.position = new Vector3(characterPos.x * dir, characterPos.y + .2f, characterPos.z);
+    transform.position = new Vector3(characterPos.x + (.02f * dir), characterPos.y + .02f, characterPos.z);
 
     this.enabled = true;
     m_wasShoot = true;
@@ -50,9 +50,12 @@ public class Bullet : MonoBehaviour
 
   private void OnTriggerEnter2D(Collider2D collision)
   {
-    transform.position = new Vector3(0.0f, 0.0f, 0.0f);
-    m_wasShoot = false;
-    this.enabled = false;
+    if (!collision.CompareTag("Player"))
+    {
+      transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+      m_wasShoot = false;
+      this.enabled = false;
+    }
   }
 
 }
