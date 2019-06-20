@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 4253648966557690748}
   - component: {fileID: 11722175254490568}
   - component: {fileID: 7853993766870943027}
+  - component: {fileID: 1782975910590744335}
   - component: {fileID: 7853993766870943024}
   m_Layer: 0
   m_Name: Megaman
@@ -171,6 +172,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1782975910590744335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4001843687458377779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6a15588c5f2e84282ce8110c25ab91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_camara: {fileID: 0}
 --- !u!61 &7853993766870943024
 BoxCollider2D:
   m_ObjectHideFlags: 0
