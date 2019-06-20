@@ -6,31 +6,54 @@ public class FallingBlock : MonoBehaviour
 {
   private SpriteRenderer m_blockState;
   private Rigidbody2D m_block;
-  public float fallDelay;
   public Sprite BrokeChunk;
   public List<Sprite> PlatformState;
+
+  public bool m_wasTouched;
+  private float m_startFalling;
+  public float m_fallTime;
+  private float m_constantFalling;
+
   void Start()
   {
     m_block = GetComponent<Rigidbody2D>();
+    m_wasTouched = false;
+    m_startFalling = 0.0f;
+    m_fallTime = 1.5f;
+    m_constantFalling = 0.05f;
     //m_blockState.sprite = PlatformState[0];
   }
 
   void OnCollisionEnter2D(Collision2D collision)
   {
-    if (collision.collider.CompareTag("Untagged"))
+    if ( collision.collider.CompareTag("Player"))
     {
-      StartCoroutine(Fall());
+    //  collision.collider.transform.SetParent(transform);
+      this.gameObject.GetComponent<SpriteRenderer>().sprite = BrokeChunk;
+
+      m_wasTouched = true;
+    }
+    //if (collision.collider.CompareTag("Untagged"))
+    //{
+    //  StartCoroutine(Fall());
+    //}
+  }
+
+  private void Update()
+  {
+    if(m_wasTouched)
+    {
+      m_startFalling += Time.deltaTime;
+    }
+    if(m_startFalling >= m_fallTime)
+    {
+      transform.position += new Vector3(0, -m_constantFalling, 0);
     }
   }
 
-  IEnumerator Fall()
+  private void OnCollisionExit2D(Collision2D collision)
   {
-    yield return new WaitForSeconds(fallDelay);
-    m_block.isKinematic = false;
-   
-    this.GetComponent<SpriteRenderer>().sprite = BrokeChunk;
-    this.GetComponent<Rigidbody2D>().gravityScale = .2f;
-    //GetComponent<Collider2D>().isTrigger = true;
-    yield return 0;
+    m_wasTouched = false;
+     // collision.collider.transform.SetParent(transform);
   }
 }
