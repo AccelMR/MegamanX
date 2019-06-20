@@ -23,7 +23,7 @@ class MMIdleState : State<Megaman>
       m_pStateMachine.ToState(entity.jumpState, entity);
     }
 
-    if (Input.GetAxisRaw("Horizontal") != 0)
+    if (Input.GetAxisRaw("Horizontal") != 0 )
     {
       m_pStateMachine.ToState(entity.moveState, entity);
     }
@@ -38,10 +38,22 @@ class MMIdleState : State<Megaman>
     {
       m_pStateMachine.ToState(entity.jumpState, entity);
     }
-
-    if(Input.GetAxisRaw("Horizontal") != 0)
+    else if (Input.GetAxisRaw("Horizontal") != 0)
     {
       m_pStateMachine.ToState(entity.moveState, entity);
+    }
+    else if(Input.GetButtonDown("Shoot"))
+    {
+      entity.shoot(0.0f);
+    }
+    else if(Input.GetButton("Shoot"))
+    {
+      entity.TimeBtnPressed += Time.fixedDeltaTime;
+    }
+    else if(Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.0f)
+    {
+      entity.shoot(entity.TimeBtnPressed);
+      entity.TimeBtnPressed = 0.0f;
     }
   }
 }

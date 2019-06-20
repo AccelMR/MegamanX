@@ -1854,7 +1854,7 @@ GameObject:
   - component: {fileID: 1409620185}
   - component: {fileID: 1409620184}
   - component: {fileID: 1409620186}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: megaman_x1_intro_stage_by_darksamus993_4096 copy_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1937,7 +1937,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.24584007, y: 1.3376303}
+  m_Offset: {x: -0.2624874, y: 1.3376303}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1948,7 +1948,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.595089, y: 0.48212385}
+  m_Size: {x: 1.6283836, y: 0.48212385}
   m_EdgeRadius: 0
 --- !u!1 &1647450294
 GameObject:
@@ -2481,12 +2481,12 @@ PrefabInstance:
     - target: {fileID: 4253648966557690748, guid: f532e26b41c07b54f83cdc06e04cd4b3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.69
+      value: 52.7
       objectReference: {fileID: 0}
     - target: {fileID: 4253648966557690748, guid: f532e26b41c07b54f83cdc06e04cd4b3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.22
+      value: 1.32
       objectReference: {fileID: 0}
     - target: {fileID: 4253648966557690748, guid: f532e26b41c07b54f83cdc06e04cd4b3,
         type: 3}
