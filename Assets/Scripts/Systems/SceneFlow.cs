@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class SceneFlow : MonoBehaviour
 {
     public Image Puntero;
+    public Image Blast;
     public Image FadeOut;
     public Font fontBlue;
     public Font fontOrange;
@@ -71,8 +72,10 @@ public class SceneFlow : MonoBehaviour
             Puntero.transform.localPosition = positions[menuIndex];
         }
 
-        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (Input.GetKeyDown(KeyCode.Return))//aqui poner el input de boton de start
         {
+            Puntero.GetComponent<Animator>().enabled = true;
+            Blast.GetComponent<Animator>().enabled = true;
             switch (menuIndex)
             {
                 case 0://start
@@ -94,7 +97,7 @@ public class SceneFlow : MonoBehaviour
 
     IEnumerator ChangeScene(string sceneName)
     {
-        FadeOut.GetComponent<Animator>().enabled = true;
+        FadeOut.GetComponent<Animator>().enabled = true;//animar fade out
         yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     }
