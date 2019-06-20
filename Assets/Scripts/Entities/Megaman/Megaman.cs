@@ -86,10 +86,22 @@ partial class Megaman : Boid
     internal set
     {
       if (value == 0.0f) return;
-      m_directionX = value;
+      if(value > 0.0f) m_directionX = 1.0f;
+      if(value < 0.0f) m_directionX = -1.0f;
       TurnSprite();
     }
   }
+
+  [SerializeField]
+  private float m_timeShootBtnPressed;
+  public float TimeBtnPressed
+  {
+    get { return m_timeShootBtnPressed; }
+    set { m_timeShootBtnPressed = value; }
+  }
+
+  [SerializeField]
+  private List<Bullet> m_bullets;
 
   /// <summary>
   /// Debug stuff
@@ -103,6 +115,8 @@ partial class Megaman : Boid
     m_floor = LayerMask.GetMask("Ground");
     m_wall = LayerMask.GetMask("Wall");
     m_animator = GetComponentInChildren<Animator>();
+    m_timeShootBtnPressed = 0;
+    m_directionX = 1.0f;
 
     //Initialize State Machine
     InitStateMachine();
@@ -147,6 +161,7 @@ partial class Megaman : Boid
     {
       //TODO: handle single shoot
       Debug.Log("Single shoot");
+      m_bullets[0].beeingShot(transform.position, m_directionX);
     }
     if(time > 1.0f && time < 2.5f)
     {
