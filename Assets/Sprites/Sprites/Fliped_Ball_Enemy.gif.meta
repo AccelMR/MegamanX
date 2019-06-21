@@ -1,0 +1,976 @@
+fileFormatVersion: 2
+guid: caab1fdd2915f994c91e687f6333054b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1605656027018246456
+    second: Fliped_Ball_Enemy_0
+  - first:
+      213: -53639549697548180
+    second: Fliped_Ball_Enemy_1
+  - first:
+      213: 2389674157774877806
+    second: Fliped_Ball_Enemy_2
+  - first:
+      213: 4317712541010661251
+    second: Fliped_Ball_Enemy_3
+  - first:
+      213: 7436797509138543019
+    second: Fliped_Ball_Enemy_4
+  - first:
+      213: 3102551044762582064
+    second: Fliped_Ball_Enemy_5
+  - first:
+      213: 4754453469426072257
+    second: Fliped_Ball_Enemy_6
+  - first:
+      213: 2931342843647858067
+    second: Fliped_Ball_Enemy_7
+  - first:
+      213: 1464026853295894706
+    second: Fliped_Ball_Enemy_8
+  - first:
+      213: 4358378401361978663
+    second: Fliped_Ball_Enemy_9
+  - first:
+      213: 6878342934521014700
+    second: Fliped_Ball_Enemy_10
+  - first:
+      213: -3676790983544733520
+    second: Fliped_Ball_Enemy_11
+  - first:
+      213: -50272133062623522
+    second: Fliped_Ball_Enemy_12
+  - first:
+      213: 703849325331297675
+    second: Fliped_Ball_Enemy_13
+  - first:
+      213: 6722371903026338044
+    second: Fliped_Ball_Enemy_14
+  - first:
+      213: 9201673014777884662
+    second: Fliped_Ball_Enemy_15
+  - first:
+      213: -5220363496743020972
+    second: Fliped_Ball_Enemy_16
+  - first:
+      213: -850500076721555403
+    second: Fliped_Ball_Enemy_17
+  - first:
+      213: 7731060270869238363
+    second: Fliped_Ball_Enemy_18
+  - first:
+      213: 8605681365822660984
+    second: Fliped_Ball_Enemy_19
+  - first:
+      213: 1846788405332063497
+    second: Fliped_Ball_Enemy_20
+  - first:
+      213: 4857623388926155316
+    second: Fliped_Ball_Enemy_21
+  - first:
+      213: 6844152857427812505
+    second: Fliped_Ball_Enemy_22
+  - first:
+      213: 3669846644058383952
+    second: Fliped_Ball_Enemy_23
+  - first:
+      213: -4586256830943538699
+    second: Fliped_Ball_Enemy_24
+  - first:
+      213: 8551720061574433369
+    second: Fliped_Ball_Enemy_25
+  - first:
+      213: 5746118796929045128
+    second: Fliped_Ball_Enemy_26
+  - first:
+      213: 1084581018941692886
+    second: Fliped_Ball_Enemy_27
+  - first:
+      213: -1311180889279397369
+    second: Fliped_Ball_Enemy_28
+  - first:
+      213: 8240859602078986250
+    second: Fliped_Ball_Enemy_29
+  - first:
+      213: -4886910686042800130
+    second: Fliped_Ball_Enemy_30
+  - first:
+      213: -3419750924080114988
+    second: Fliped_Ball_Enemy_31
+  - first:
+      213: -7524607934262891151
+    second: Fliped_Ball_Enemy_32
+  - first:
+      213: 7184150026952126606
+    second: Fliped_Ball_Enemy_33
+  - first:
+      213: -626431542694892261
+    second: Fliped_Ball_Enemy_34
+  - first:
+      213: 3347942940485775665
+    second: Fliped_Ball_Enemy_35
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 136
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90166ce47ab533b408b45c2bb8a3d948
+      internalID: 1605656027018246456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 139
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03454f82c02216a4b8f914eb617a844f
+      internalID: -53639549697548180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 141
+        width: 59
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3a83aaf3e52284c916d0c2eee784c5
+      internalID: 2389674157774877806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 141
+        width: 62
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d329aa86e49b28249bd2e4cc1138905c
+      internalID: 4317712541010661251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_4
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 141
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640b6f966c5da4e45ac2b628f70d5205
+      internalID: 7436797509138543019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_5
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 140
+        width: 56
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008716961ffb846449c4b0bc7a53251f
+      internalID: 3102551044762582064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_6
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 141
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7caab050a7862c24f8e97f38fad9185b
+      internalID: 4754453469426072257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_7
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 141
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e0955a9ef69344fb4ae4856908bba7
+      internalID: 2931342843647858067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_8
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 140
+        width: 58
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8787de5f0621b846a81cef10020917e
+      internalID: 1464026853295894706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_9
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 142
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b97d1daed9d26747a7aafe5fb850b91
+      internalID: 4358378401361978663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_10
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 142
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49d7d0092506864caaf3b84e4c57edb
+      internalID: 6878342934521014700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_11
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 137
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1229ec92e740c44abd5e4c471492c7
+      internalID: -3676790983544733520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_12
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 141
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6264026ff259af2489d26561c01d086d
+      internalID: -50272133062623522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_13
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 141
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf10f94f3a954a48aa2be6a70db792f
+      internalID: 703849325331297675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_14
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 142
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0437f26e1536fab43a07bbceb63326bc
+      internalID: 6722371903026338044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_15
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 91
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a5ccd1bba31844a875d6886755727b
+      internalID: 9201673014777884662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_16
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 91
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3530770969262c64ea0106f51333ffee
+      internalID: -5220363496743020972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_17
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 88
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f74394564e69c4686d2d00c7845d6a
+      internalID: -850500076721555403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_18
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 89
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf52934511bceca47af21cd6d4b52818
+      internalID: 7731060270869238363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_19
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 89
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc72f2cac833b38459c378e3020dfccb
+      internalID: 8605681365822660984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_20
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 89
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1526ba2065df94b48a7622915b7a35d5
+      internalID: 1846788405332063497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_21
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 79
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc84d041ca1c8b042a81cb943bfbf4d7
+      internalID: 4857623388926155316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_22
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 79
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807e79fcb7f3ef44bb45a9336a4e7be2
+      internalID: 6844152857427812505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_23
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 80
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ed1b9bb3a425a41bfd43d563c4c6f8
+      internalID: 3669846644058383952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_24
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 81
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f271e62e629a448a883774b23b70ec
+      internalID: -4586256830943538699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_25
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 82
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c0c5319759de94193161800966ca80
+      internalID: 8551720061574433369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_26
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 0
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e711784cf8050274fbe416458587fb1c
+      internalID: 5746118796929045128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_27
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 0
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09bedf0dfcd35a42b5de443911dee07
+      internalID: 1084581018941692886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_28
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 0
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8181f45af01f1e44db9439330959817d
+      internalID: -1311180889279397369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_29
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 3
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670a4ce9d50da75408da26fc98b7209b
+      internalID: 8240859602078986250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_30
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 4
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2334e5f16b3a6a44794a2a4d32dcd7e0
+      internalID: -4886910686042800130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_31
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 5
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f930f9f288a7f642ab897d4b31dcbf8
+      internalID: -3419750924080114988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_32
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 5
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056aa4448e29e434c864ed329d151e7d
+      internalID: -7524607934262891151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_33
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 6
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1ff7fb4e4c9a84dbdb816c895021a0
+      internalID: 7184150026952126606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_34
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 8
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48007c185fde2294f8731c085d76dc57
+      internalID: -626431542694892261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fliped_Ball_Enemy_35
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 10
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe954b3f1cad1a3428ccd4a365221042
+      internalID: 3347942940485775665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2da19b5714202b94f9298c1cd6b01fe5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
