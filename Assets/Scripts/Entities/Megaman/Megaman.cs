@@ -102,6 +102,11 @@ partial class Megaman : Boid
 
   [SerializeField]
   private List<Bullet> m_bullets;
+  [SerializeField]
+  private Bullet m_greenBullet;
+  [SerializeField]
+  private Bullet m_blueBullet;
+
 
   private int m_indexBullet;
 
@@ -171,7 +176,7 @@ partial class Megaman : Boid
     else if(time > 1.0f && time < 2.5f)
     {
       //TODO: handle second shoot
-     // Debug.Log("Second shoot");
+      m_greenBullet.beeingShot(transform.position, m_directionX);
     }
     else if(time > 2.5)
     {

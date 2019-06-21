@@ -15,6 +15,29 @@ public class Bullet : MonoBehaviour
 
   private SpriteRenderer m_renderer;
 
+  private Animator m_animator;
+  public Animator Anim
+  {
+    get
+    {
+      if (null == m_animator)
+      {
+        m_animator = GetComponentInChildren<Animator>();
+        if (null == m_animator)
+        {
+          //Throw
+        }
+      }
+      return m_animator;
+    }
+  }
+
+  [SerializeField]
+  private float m_offsetX;
+  [SerializeField]
+  private float m_offsetY;
+
+  
   // Start is called before the first frame update
   void Start()
   {
@@ -22,6 +45,7 @@ public class Bullet : MonoBehaviour
     m_collider = GetComponent<BoxCollider2D>();
     m_wasShoot = false;
     m_dir = 0.0f;
+
   }
 
   // Update is called once per frame
@@ -52,9 +76,19 @@ public class Bullet : MonoBehaviour
     
     disable(true);
 
-    transform.position = new Vector3(characterPos.x + (0.25f * dir), 
-                                     characterPos.y + .02f, 
+    transform.position = new Vector3(characterPos.x + (m_offsetX * dir), 
+                                     characterPos.y + m_offsetY, 
                                      characterPos.z);
+
+    var scale = transform.GetChild(0).localScale;
+    transform.GetChild(0).localScale = scale;
+    scale.x = Mathf.Abs(scale.x) * dir;
+    transform.GetChild(0).localScale = scale;
+
+    if (Anim)
+    {
+      Anim.SetBool("Init", true);
+    }
 
     m_dir = dir;
   }

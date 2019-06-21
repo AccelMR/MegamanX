@@ -73,6 +73,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_velocity: 10
+  m_offsetX: 0.25
+  m_offsetY: 0.02
 --- !u!50 &2229556262611733140
 Rigidbody2D:
   serializedVersion: 4
