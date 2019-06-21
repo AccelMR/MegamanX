@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4101433812625863349}
   - component: {fileID: 4101433812625863345}
   - component: {fileID: 4101433812625863344}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Spiky 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4101433812625863370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.27, y: 0.15, z: -7.6768236}
+  m_LocalPosition: {x: 13.03, y: 0.58, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,7 +99,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.185
+  m_Radius: 0.12474759
 --- !u!114 &4101433812625863349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +113,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Megaman: {fileID: 0}
-  m_speed: 0.5
+  m_speed: 1.75
+  Max_Health: 4
 --- !u!95 &4101433812625863345
 Animator:
   serializedVersion: 3
