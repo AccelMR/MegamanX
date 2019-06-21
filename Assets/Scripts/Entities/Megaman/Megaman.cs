@@ -103,6 +103,8 @@ partial class Megaman : Boid
   [SerializeField]
   private List<Bullet> m_bullets;
 
+  private int m_indexBullet;
+
   /// <summary>
   /// Debug stuff
   /// </summary>
@@ -117,6 +119,7 @@ partial class Megaman : Boid
     m_animator = GetComponentInChildren<Animator>();
     m_timeShootBtnPressed = 0;
     m_directionX = 1.0f;
+    m_indexBullet = -1;
 
     //Initialize State Machine
     InitStateMachine();
@@ -157,21 +160,23 @@ partial class Megaman : Boid
 
   public void shoot(float time)
   {
-    if(time >= 0.0f && time < 1.0f)
+    m_indexBullet++;
+    if (m_indexBullet > 2) m_indexBullet = 0;
+
+    if (time >= 0.0f && time < 1.0f)
     {
-      //TODO: handle single shoot
-      Debug.Log("Single shoot");
-      m_bullets[0].beeingShot(transform.position, m_directionX);
+     // Debug.Log("Single shoot");
+      m_bullets[m_indexBullet].beeingShot(transform.position, m_directionX);
     }
-    if(time > 1.0f && time < 2.5f)
+    else if(time > 1.0f && time < 2.5f)
     {
       //TODO: handle second shoot
-      Debug.Log("Second shoot");
+     // Debug.Log("Second shoot");
     }
-    if(time > 2.5)
+    else if(time > 2.5)
     {
       //TODO: handle massive shoot
-      Debug.Log("Third shoot");
+     // Debug.Log("Third shoot");
     }
   }
 

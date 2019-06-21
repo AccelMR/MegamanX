@@ -18,7 +18,16 @@ class MMMoveState : State<Megaman>
 
     entity.VelocityX = dir * entity.Speed;
     entity.DirectionX = dir;
-    if(!entity.IsGrounded)
+
+    if (dir == 0.0f)
+    {
+      m_pStateMachine.ToState(entity.idleState, entity);
+    }
+    else if (Input.GetButtonDown("Jump") && entity.IsGrounded)
+    {
+      m_pStateMachine.ToState(entity.jumpState, entity);
+    }
+    else if (!entity.IsGrounded)
     {
       m_pStateMachine.ToState(entity.fallState, entity);
     }
@@ -26,9 +35,18 @@ class MMMoveState : State<Megaman>
     {
       m_pStateMachine.ToState(entity.idleState, entity);
     }
-    else if (Input.GetButtonDown("Jump") && entity.IsGrounded)
+    else if (Input.GetButtonDown("Shoot"))
     {
-      m_pStateMachine.ToState(entity.jumpState, entity);
+      entity.shoot(0.0f);
+    }
+    else if (Input.GetButton("Shoot"))
+    {
+      entity.TimeBtnPressed += Time.fixedDeltaTime;
+    }
+    else if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 1.0f)
+    {
+      entity.shoot(entity.TimeBtnPressed);
+      entity.TimeBtnPressed = 0.0f;
     }
   }
 
@@ -45,6 +63,27 @@ class MMMoveState : State<Megaman>
     else if (Input.GetButtonDown("Jump") && entity.IsGrounded)
     {
       m_pStateMachine.ToState(entity.jumpState, entity);
+    }
+    else if (!entity.IsGrounded)
+    {
+      m_pStateMachine.ToState(entity.fallState, entity);
+    }
+    else if (dir == 0.0f)
+    {
+      m_pStateMachine.ToState(entity.idleState, entity);
+    }
+    else if (Input.GetButtonDown("Shoot"))
+    {
+      entity.shoot(0.0f);
+    }
+    else if (Input.GetButton("Shoot"))
+    {
+      entity.TimeBtnPressed += Time.fixedDeltaTime;
+    }
+    else if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 1.0f)
+    {
+      entity.shoot(entity.TimeBtnPressed);
+      entity.TimeBtnPressed = 0.0f;
     }
 
   }

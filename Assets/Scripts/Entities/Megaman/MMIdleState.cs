@@ -50,7 +50,7 @@ class MMIdleState : State<Megaman>
     {
       entity.TimeBtnPressed += Time.fixedDeltaTime;
     }
-    else if(Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.0f)
+    else if(Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 1.0f)
     {
       entity.shoot(entity.TimeBtnPressed);
       entity.TimeBtnPressed = 0.0f;

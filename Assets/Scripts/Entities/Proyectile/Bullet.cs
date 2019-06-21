@@ -13,9 +13,12 @@ public class Bullet : MonoBehaviour
 
   private BoxCollider2D m_collider;
 
+  private SpriteRenderer m_renderer;
+
   // Start is called before the first frame update
   void Start()
   {
+    m_renderer = GetComponentInChildren<SpriteRenderer>();
     m_collider = GetComponent<BoxCollider2D>();
     m_wasShoot = false;
     m_dir = 0.0f;
@@ -24,38 +27,58 @@ public class Bullet : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-
   }
 
   //Fixed Update
   private void FixedUpdate()
   {
-    if(m_wasShoot)
+    if(m_wasShoot /*&& m_renderer.enabled*/)
     {
       float xPos = m_velocity * Time.fixedDeltaTime * m_dir;
 
       transform.position += new Vector3(xPos, 0.0f, 0.0f);
     }
-
+    if (!m_renderer.isVisible && m_wasShoot)
+    {
+      disable(false);
+    }
   }
 
   public void beeingShot(Vector3 characterPos, float dir)
   {
-    transform.position = new Vector3(characterPos.x + (.02f * dir), characterPos.y + .02f, characterPos.z);
+    Debug.Log("Single shoot");
 
-    this.enabled = true;
-    m_wasShoot = true;
+    if (m_collider.enabled) return;
+    
+    disable(true);
+
+    transform.position = new Vector3(characterPos.x + (0.25f * dir), 
+                                     characterPos.y + .02f, 
+                                     characterPos.z);
+
     m_dir = dir;
   }
 
   private void OnTriggerEnter2D(Collider2D collision)
   {
-    if (!collision.CompareTag("Player"))
+    if (collision.CompareTag("Player"))
     {
-      transform.position = new Vector3(0.0f, 0.0f, 0.0f);
-      m_wasShoot = false;
-      this.enabled = false;
+      return;
     }
+    if (collision.CompareTag("Bullet"))
+    {
+      return;
+    }
+
+    //transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+    disable(false);
+  }
+
+  private void disable(bool bul)
+  {
+    m_wasShoot = bul;
+    m_collider.enabled = bul;
+    m_renderer.enabled = bul;
   }
 
 }

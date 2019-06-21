@@ -34,6 +34,19 @@ class MMJumpState : State<Megaman>
     entity.VelocityX = dirX * entity.Speed;
     entity.DirectionX = dirX;
 
+    if (Input.GetButtonDown("Shoot"))
+    {
+      entity.shoot(0.0f);
+    }
+    else if (Input.GetButton("Shoot"))
+    {
+      entity.TimeBtnPressed += Time.fixedDeltaTime;
+    }
+    else if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 1.0f)
+    {
+      entity.shoot(entity.TimeBtnPressed);
+      entity.TimeBtnPressed = 0.0f;
+    }
   }
 
   public override void OnStateUpdate(Megaman entity)
@@ -44,6 +57,20 @@ class MMJumpState : State<Megaman>
     var dirX = Input.GetAxisRaw("Horizontal");
     entity.DirectionX = dirX;
     m_timeJumping -= Time.fixedDeltaTime;
+
+    if (Input.GetButtonDown("Shoot"))
+    {
+      entity.shoot(0.0f);
+    }
+    else if (Input.GetButton("Shoot"))
+    {
+      entity.TimeBtnPressed += Time.fixedDeltaTime;
+    }
+    else if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 1.0f)
+    {
+      entity.shoot(entity.TimeBtnPressed);
+      entity.TimeBtnPressed = 0.0f;
+    }
 
     if (Input.GetButton("Jump") && m_timeJumping > 0.0f)
     {
