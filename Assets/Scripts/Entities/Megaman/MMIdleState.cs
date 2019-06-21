@@ -9,13 +9,24 @@ class MMIdleState : State<Megaman>
 
   public override void OnStateEnter(Megaman character)
   {
-    Debug.Log("Idle state");
     character.setAnim(ANIM_STATE.IDLE);
     character.VelocityX = 0.0f;
   }
 
   public override void OnStatePreUpdate(Megaman entity)
   {
+    entity.VelocityX = 0.0f;
+
+    // Check inputs every time
+    if (Input.GetButtonDown("Jump") && entity.IsGrounded)
+    {
+      m_pStateMachine.ToState(entity.jumpState, entity);
+    }
+
+    if (Input.GetAxisRaw("Horizontal") != 0 )
+    {
+      m_pStateMachine.ToState(entity.moveState, entity);
+    }
   }
 
   public override void OnStateUpdate(Megaman entity)
@@ -27,10 +38,22 @@ class MMIdleState : State<Megaman>
     {
       m_pStateMachine.ToState(entity.jumpState, entity);
     }
-
-    if(Input.GetAxisRaw("Horizontal") != 0)
+    else if (Input.GetAxisRaw("Horizontal") != 0)
     {
       m_pStateMachine.ToState(entity.moveState, entity);
+    }
+    else if(Input.GetButtonDown("Shoot"))
+    {
+      entity.shoot(0.0f);
+    }
+    else if(Input.GetButton("Shoot"))
+    {
+      entity.TimeBtnPressed += Time.fixedDeltaTime;
+    }
+    else if(Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.0f)
+    {
+      entity.shoot(entity.TimeBtnPressed);
+      entity.TimeBtnPressed = 0.0f;
     }
   }
 }

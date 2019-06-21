@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 
-public class BoidParallax : MonoBehaviour
+public class Parallax : MonoBehaviour
 {
   [Tooltip("Camera to use for the parallax. Defaults to main camera.")]
   public Camera parallaxCamera;

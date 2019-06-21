@@ -31,4 +31,5 @@ class MMSpawnState : State<Megaman>
   {
     entity.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
   }
+
 }

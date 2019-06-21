@@ -21,22 +21,25 @@ class MMFallState : State<Megaman>
 
   public override void OnStatePreUpdate(Megaman entity)
   {
-    if (entity.IsGrounded)
+    var dirX = Input.GetAxisRaw("Horizontal");
+
+    if (entity.IsGrounded && dirX > 0.0f)
+    {
+      m_pStateMachine.ToState(entity.moveState, entity);
+    }
+    else if (entity.IsGrounded)
     {
       m_pStateMachine.ToState(entity.idleState, entity);
     }
 
-    var dirX = Input.GetAxisRaw("Horizontal");
     entity.DirectionX = dirX;
 
   }
 
   public override void OnStateUpdate(Megaman entity)
   {
-    if (entity.IsGrounded)
-    {
-      m_pStateMachine.ToState(entity.idleState, entity);
-    }
+    //Debug
+    entity.airTime += Time.fixedDeltaTime;
 
     var dirX = Input.GetAxisRaw("Horizontal");
     entity.DirectionX = dirX;
@@ -47,7 +50,28 @@ class MMFallState : State<Megaman>
     float lapse = Mathf.Pow(normTime, 2);
 
     float yPos = Mathf.Lerp(0, entity.MaxJump, normTime);
+
+    if (entity.IsGrounded && dirX > 0.0f)
+    {
+      m_pStateMachine.ToState(entity.moveState, entity);
+    }
+    else if (entity.IsGrounded)
+    {
+      m_pStateMachine.ToState(entity.idleState, entity);
+    }
+    else if(entity.IsWalled && dirX != 0)
+    {
+      m_pStateMachine.ToState(entity.wallSlide, entity);
+    }
+
     entity.transform.position += new Vector3(0, -yPos, 0);
 
+  }
+
+  public override void OnStateExit(Megaman entity)
+  {
+    Debug.Log(entity.airTime);
+
+    entity.airTime = 0;
   }
 }
