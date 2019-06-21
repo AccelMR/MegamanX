@@ -9,16 +9,32 @@ class MMIdleState : State<Megaman>
 
   public override void OnStateEnter(Megaman character)
   {
+    character.setAnim(ANIM_STATE.IDLE);
+    character.VelocityX = 0.0f;
   }
 
   public override void OnStatePreUpdate(Megaman entity)
   {
+    entity.VelocityX = 0.0f;
+
+    // Check inputs every time
+    if (Input.GetButtonDown("Jump") && entity.IsGrounded)
+    {
+      m_pStateMachine.ToState(entity.jumpState, entity);
+    }
+
+    if (Input.GetAxisRaw("Horizontal") != 0)
+    {
+      m_pStateMachine.ToState(entity.moveState, entity);
+    }
   }
 
   public override void OnStateUpdate(Megaman entity)
   {
+    entity.VelocityX = 0.0f;
+
     // Check inputs every time
-    if (Input.GetButtonDown("Jump"))
+    if (Input.GetButtonDown("Jump") && entity.IsGrounded)
     {
       m_pStateMachine.ToState(entity.jumpState, entity);
     }

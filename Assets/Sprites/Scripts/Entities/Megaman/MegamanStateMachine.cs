@@ -13,6 +13,9 @@ partial class Megaman : Boid
   public MMIdleState idleState;
   public MMJumpState jumpState;
   public MMMoveState moveState;
+  public MMSpawnState spawnState;
+  public MMFallState fallState;
+
   /// <summary>
   /// Initialize State Machine and all states
   /// </summary>
@@ -20,10 +23,13 @@ partial class Megaman : Boid
   {
     m_stateMachine = new StateMachine<Megaman>();
 
-    idleState = new MMIdleState(m_stateMachine);
-    jumpState = new MMJumpState(m_stateMachine);
-    moveState = new MMMoveState(m_stateMachine);
+    spawnState = new MMSpawnState(m_stateMachine);
+    idleState  = new MMIdleState(m_stateMachine);
+    jumpState  = new MMJumpState(m_stateMachine);
+    moveState  = new MMMoveState(m_stateMachine);
+    fallState  = new MMFallState(m_stateMachine);
+
     /// First state, or initial state
-    m_stateMachine.Init(idleState);
+    m_stateMachine.Init(spawnState);
   }
 }

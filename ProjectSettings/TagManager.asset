@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Man
-  - Disparo
-  - ground
+  - PlayerHealth
+  - Enemy
+  - ChargedBeam
   layers:
   - Default
   - TransparentFX
@@ -16,12 +16,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Background
+  - Level
+  - Player
+  - Foreground
+  - Enemies
+  - Respawn
   - 
   - 
   - 
@@ -43,4 +43,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2863594047
+    locked: 0
+  - name: Level
+    uniqueID: 1588003183
+    locked: 0
+  - name: Player
+    uniqueID: 2821962879
+    locked: 0
+  - name: Enemies
+    uniqueID: 2273254331
+    locked: 0
+  - name: ForegroundLevel
+    uniqueID: 1284762319
     locked: 0
