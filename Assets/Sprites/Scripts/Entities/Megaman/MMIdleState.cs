@@ -22,10 +22,25 @@ class MMIdleState : State<Megaman>
     {
       m_pStateMachine.ToState(entity.jumpState, entity);
     }
-
-    if (Input.GetAxisRaw("Horizontal") != 0 )
+    else if (Input.GetAxisRaw("Horizontal") != 0 )
     {
       m_pStateMachine.ToState(entity.moveState, entity);
+    }
+    else if (Input.GetButtonDown("Shoot"))
+    {
+      entity.setAnim(ANIM_STATE.ATTACK);
+      entity.shoot(0.0f);
+    }
+    else if (Input.GetButton("Shoot"))
+    {
+      entity.TimeBtnPressed += Time.fixedDeltaTime;
+    }
+
+    if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.98f)
+    {
+      entity.setAnim(ANIM_STATE.ATTACK);
+      entity.shoot(entity.TimeBtnPressed);
+      entity.TimeBtnPressed = 0.0f;
     }
   }
 
@@ -44,16 +59,20 @@ class MMIdleState : State<Megaman>
     }
     else if(Input.GetButtonDown("Shoot"))
     {
+      entity.setAnim(ANIM_STATE.ATTACK);
       entity.shoot(0.0f);
     }
     else if(Input.GetButton("Shoot"))
     {
       entity.TimeBtnPressed += Time.fixedDeltaTime;
     }
-    else if(Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.0f)
+
+    if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.98f)
     {
+      entity.setAnim(ANIM_STATE.ATTACK);
       entity.shoot(entity.TimeBtnPressed);
       entity.TimeBtnPressed = 0.0f;
     }
+
   }
 }

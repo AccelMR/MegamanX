@@ -5,33 +5,34 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
   [SerializeField] protected int damage;
+  [SerializeField] protected float speed;
   // Start is called before the first frame update
   void Start()
   {
-
+    Deactivate();
   }
 
   // Update is called once per frame
   void Update()
   {
-    transform.position += new Vector3(-1, 0, 0) * 2.0f * Time.deltaTime;
+    transform.position += new Vector3(-1, 0, 0) * speed * Time.deltaTime;
   }
   public virtual void Deactivate()
   {
     GetComponent<Collider2D>().enabled = false;
     GetComponent<SpriteRenderer>().enabled = false;
+    gameObject.SetActive(false);
 
     //Play Animation
-    if(GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
+    if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
     {
-      gameObject.SetActive(false);
     }
   }
-  public virtual void Activate()
+  public virtual void Activate(Vector3 position)
   {
     GetComponent<Collider2D>().enabled = true;
     GetComponent<SpriteRenderer>().enabled = true;
-    gameObject.SetActive(true);
+    transform.position = position;
 
   }
 }
