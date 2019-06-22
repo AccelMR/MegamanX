@@ -179,7 +179,6 @@ partial class Megaman : Boid
     else if(time > 1.0f && time < 2.5f)
     {
       m_greenBullet.beeingShot(transform.position, dir);
-
     }
     else if(time > 2.5)
     {
