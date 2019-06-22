@@ -7,8 +7,8 @@ TagManager:
   - PlayerHealth
   - Enemy
   - ChargedBeam
-  - spin
-  - Crusher
+  - Bullet
+  - TriggerLimit
   layers:
   - Default
   - TransparentFX
@@ -24,9 +24,9 @@ TagManager:
   - Foreground
   - Enemies
   - Respawn
-  - 
-  - 
-  - 
+  - Ground
+  - Wall
+  - Bullet
   - 
   - 
   - 

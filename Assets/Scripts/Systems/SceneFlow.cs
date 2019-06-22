@@ -3,26 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class SceneFlow : MonoBehaviour
 {
-    public Image Puntero;
-    public Image Blast;
-    public Image FadeOut;
-    public Font fontBlue;
-    public Font fontOrange;
-    public Text[] menuTexts = new Text[3];
-    int menuIndex = 0;
+    public Image Fade;
+
     string currentSceneName;
 
-    Vector2[] positions = new Vector2[3];
 
     // Start is called before the first frame update
     void Start()
     {
-        positions[0] = new Vector2(-93, -59);
-        positions[1] = new Vector2(-93, -77);
-        positions[2] = new Vector2(-93, -95);
+       
     }
 
     private void Awake()
@@ -33,72 +26,31 @@ public class SceneFlow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentSceneName == "MenuScene")
+        if (currentSceneName == "MenuScene")//si est en la escena del menu
         {
-            Menu();
-        }
-    }
 
-    void Menu()
-    {
-        if (Input.GetKeyDown(KeyCode.DownArrow)) //Aqui reemplazar por el nuevo input
-        {
-            menuTexts[menuIndex].font = fontBlue;
-            menuIndex++;
-            if (menuIndex == 3)
-            {
-                menuIndex = 0;
-            }
-            else if (menuIndex == -1)
-            {
-                menuIndex = 2;
-            }
-            Puntero.transform.localPosition = positions[menuIndex];
-            menuTexts[menuIndex].font = fontOrange;
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow)) //Aqui reemplazar por el nuevo input
+        if (currentSceneName == "Intro1")
         {
-            menuTexts[menuIndex].font = fontBlue;
-            menuIndex--;
-            if (menuIndex == 3)
+            if (Input.GetKeyDown(KeyCode.Return))
             {
-                menuIndex = 0;
+                StartCoroutine(ChangeScene("Intro2"));
             }
-            else if (menuIndex == -1)
-            {
-                menuIndex = 2;
-            }
-            menuTexts[menuIndex].font = fontOrange;
-            Puntero.transform.localPosition = positions[menuIndex];
         }
-
-        if (Input.GetKeyDown(KeyCode.Return))//aqui poner el input de boton de start
+        if (currentSceneName == "Intro2")
         {
-            Puntero.GetComponent<Animator>().enabled = true;
-            Blast.GetComponent<Animator>().enabled = true;
-            switch (menuIndex)
+            if (Input.GetKeyDown(KeyCode.Return))
             {
-                case 0://start
-                    {
-                        StartCoroutine(ChangeScene("MainGame"));
-                        break;
-                    }
-                case 1://password codes
-                    {
-                        break;
-                    }
-                case 2://options
-                    {
-                        break;
-                    }
+                StartCoroutine(ChangeScene("MenuScene"));
             }
         }
     }
 
-    IEnumerator ChangeScene(string sceneName)
+    public IEnumerator ChangeScene(string sceneName, float delay = 0)
     {
-        FadeOut.GetComponent<Animator>().enabled = true;//animar fade out
-        yield return new WaitForSeconds(1.0f);
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        yield return new WaitForSeconds(delay);//si es necesario un delay
+        Fade.GetComponent<Animator>().enabled = true;//animar fade out
+        yield return new WaitForSeconds(1.0f);//esperar a la animacion de fadeOut
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);//cargar escena
     }
 }
