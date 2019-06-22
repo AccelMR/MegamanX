@@ -34,6 +34,10 @@ partial class Megaman : Boid
   private float m_jumpTime;
   public float JumpTime { get { return m_jumpTime; } }
 
+  [SerializeField]
+  private float m_slideVelocity;
+  public float SlideVelocity { get { return m_slideVelocity; } }
+
   /// <summary>
   /// how much mega man will jump
   /// </summary>
