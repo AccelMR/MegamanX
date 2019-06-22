@@ -32,6 +32,7 @@ public class RoadAttacker : Enemy
         Pos = new Vector3(1, 0, 0);
         // Make a note of the time the script started.
         startTime = Time.time;
+        health = Max_Health;
     }
 
     // Update is called once per frame
@@ -85,6 +86,16 @@ public class RoadAttacker : Enemy
         }
 
         transform.position += new Vector3(1, 0, 0) * Pos.x * m_speed * Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            health--;
+        }
+
+        if (health == 0)
+        {
+            m_animator.SetBool("dead", true);
+        }
     }
 
     private void LateUpdate()
