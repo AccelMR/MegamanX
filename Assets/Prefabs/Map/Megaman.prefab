@@ -109,9 +109,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4253648966557690748}
-  - component: {fileID: 11722175254490568}
   - component: {fileID: 7853993766870943027}
   - component: {fileID: 3612648872837286560}
+  - component: {fileID: 685495408469251063}
   m_Layer: 10
   m_Name: Megaman
   m_TagString: Untagged
@@ -134,31 +134,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11722175254490568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4001843687458377779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62394c7867d80b34290566c9509fb0a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interpolateMovement: 0
-  m_speed: 1.75
-  m_jumpTime: 10
-  m_slideVelocity: 0.008
-  m_maxJump: 0.3
-  m_isGround: 0
-  m_isWalled: 0
-  m_timeShootBtnPressed: 0
-  m_bullets:
-  - {fileID: 0}
-  m_greenBullet: {fileID: 0}
-  m_blueBullet: {fileID: 0}
-  airTime: 0
 --- !u!50 &7853993766870943027
 Rigidbody2D:
   serializedVersion: 4
@@ -196,3 +171,27 @@ CapsuleCollider2D:
   m_Offset: {x: 0.04, y: 0}
   m_Size: {x: 0.2, y: 0.58}
   m_Direction: 0
+--- !u!114 &685495408469251063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4001843687458377779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62394c7867d80b34290566c9509fb0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interpolateMovement: 0
+  m_speed: 0
+  m_jumpTime: 0
+  m_slideVelocity: 0
+  m_maxJump: 0
+  m_isGround: 0
+  m_isWalled: 0
+  m_timeShootBtnPressed: 0
+  m_bullets: []
+  m_greenBullet: {fileID: 0}
+  m_blueBullet: {fileID: 0}
+  airTime: 0
