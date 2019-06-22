@@ -91,11 +91,11 @@ public class Bullet : MonoBehaviour
   {
     if (m_collider.enabled) return;
     
-    disable(true);
 
     transform.position = new Vector3(characterPos.x + (m_offsetX * dir), 
                                      characterPos.y + m_offsetY, 
                                      characterPos.z);
+    disable(true);
 
     var scale = transform.GetChild(0).localScale;
     transform.GetChild(0).localScale = scale;
