@@ -1,0 +1,1768 @@
+fileFormatVersion: 2
+guid: 261d15bdf4911bc46b51ed95266d4630
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5090972474324034802
+    second: mmx1_f1_vile1_0
+  - first:
+      213: 221110036770052503
+    second: mmx1_f1_vile1_1
+  - first:
+      213: 7624875278345200255
+    second: mmx1_f1_vile1_2
+  - first:
+      213: 8864331123619449888
+    second: mmx1_f1_vile1_3
+  - first:
+      213: 3636088523491866317
+    second: mmx1_f1_vile1_4
+  - first:
+      213: -6070144003653446105
+    second: mmx1_f1_vile1_5
+  - first:
+      213: -6901488124860251773
+    second: mmx1_f1_vile1_6
+  - first:
+      213: -5066211922381151711
+    second: mmx1_f1_vile1_7
+  - first:
+      213: 9071729844572237764
+    second: mmx1_f1_vile1_8
+  - first:
+      213: -6498725969195110037
+    second: mmx1_f1_vile1_9
+  - first:
+      213: 3125333312534979385
+    second: mmx1_f1_vile1_10
+  - first:
+      213: 511378804451219149
+    second: mmx1_f1_vile1_11
+  - first:
+      213: -7565491833816198392
+    second: mmx1_f1_vile1_12
+  - first:
+      213: -5986949080111894833
+    second: mmx1_f1_vile1_13
+  - first:
+      213: 3594290949926620186
+    second: mmx1_f1_vile1_14
+  - first:
+      213: -5742783011007594317
+    second: mmx1_f1_vile1_15
+  - first:
+      213: 871232807961318701
+    second: mmx1_f1_vile1_16
+  - first:
+      213: 8259944211669085765
+    second: mmx1_f1_vile1_17
+  - first:
+      213: -2068476826625768873
+    second: mmx1_f1_vile1_18
+  - first:
+      213: 2400546687267303451
+    second: mmx1_f1_vile1_19
+  - first:
+      213: -6406749489573070935
+    second: mmx1_f1_vile1_20
+  - first:
+      213: -4971267982166656794
+    second: mmx1_f1_vile1_21
+  - first:
+      213: -850420482304329443
+    second: mmx1_f1_vile1_22
+  - first:
+      213: -7069201632335044699
+    second: mmx1_f1_vile1_23
+  - first:
+      213: -8858026452708912925
+    second: mmx1_f1_vile1_24
+  - first:
+      213: 7923635701821886264
+    second: mmx1_f1_vile1_25
+  - first:
+      213: 4576770389792141323
+    second: mmx1_f1_vile1_26
+  - first:
+      213: -3873042885405598810
+    second: mmx1_f1_vile1_27
+  - first:
+      213: -6997732255219014807
+    second: mmx1_f1_vile1_28
+  - first:
+      213: -6953296690555766815
+    second: mmx1_f1_vile1_29
+  - first:
+      213: -7821018063862953383
+    second: mmx1_f1_vile1_30
+  - first:
+      213: -6557871331990594524
+    second: mmx1_f1_vile1_31
+  - first:
+      213: -5467820286862826803
+    second: mmx1_f1_vile1_32
+  - first:
+      213: -1293079532398768683
+    second: mmx1_f1_vile1_33
+  - first:
+      213: 6877019533768923279
+    second: mmx1_f1_vile1_34
+  - first:
+      213: -3979822134713262516
+    second: mmx1_f1_vile1_35
+  - first:
+      213: 6420297274374847716
+    second: mmx1_f1_vile1_36
+  - first:
+      213: -35086205873249841
+    second: mmx1_f1_vile1_37
+  - first:
+      213: 2091556834259558041
+    second: mmx1_f1_vile1_38
+  - first:
+      213: 6566912118572643538
+    second: mmx1_f1_vile1_39
+  - first:
+      213: 4585757581413925943
+    second: mmx1_f1_vile1_40
+  - first:
+      213: 8148654208772278087
+    second: mmx1_f1_vile1_41
+  - first:
+      213: 1467728509862758914
+    second: mmx1_f1_vile1_42
+  - first:
+      213: 1343262103405131383
+    second: mmx1_f1_vile1_43
+  - first:
+      213: -9183306414311260066
+    second: mmx1_f1_vile1_44
+  - first:
+      213: -986239962914957191
+    second: mmx1_f1_vile1_45
+  - first:
+      213: -4339137141728820205
+    second: mmx1_f1_vile1_46
+  - first:
+      213: 2130170020402268446
+    second: mmx1_f1_vile1_47
+  - first:
+      213: 5715451701713072948
+    second: mmx1_f1_vile1_48
+  - first:
+      213: 8392262610042927476
+    second: mmx1_f1_vile1_49
+  - first:
+      213: 7206931456645031655
+    second: mmx1_f1_vile1_50
+  - first:
+      213: -8255603201512088071
+    second: mmx1_f1_vile1_51
+  - first:
+      213: 8892477841775504888
+    second: mmx1_f1_vile1_52
+  - first:
+      213: -8722771761304811875
+    second: mmx1_f1_vile1_53
+  - first:
+      213: 7081686498858012838
+    second: mmx1_f1_vile1_54
+  - first:
+      213: -7143811650209485460
+    second: mmx1_f1_vile1_55
+  - first:
+      213: -6701423875736707277
+    second: mmx1_f1_vile1_56
+  - first:
+      213: -7199472162359609087
+    second: mmx1_f1_vile1_57
+  - first:
+      213: 745210687454878930
+    second: mmx1_f1_vile1_58
+  - first:
+      213: 4382812367586478769
+    second: mmx1_f1_vile1_59
+  - first:
+      213: 5874525979852764984
+    second: mmx1_f1_vile1_60
+  - first:
+      213: -852256877690470103
+    second: mmx1_f1_vile1_61
+  - first:
+      213: -9209010206733453989
+    second: mmx1_f1_vile1_62
+  - first:
+      213: -293868771239757488
+    second: mmx1_f1_vile1_63
+  - first:
+      213: -7796320399287337518
+    second: mmx1_f1_vile1_64
+  - first:
+      213: -571952658601702880
+    second: mmx1_f1_vile1_65
+  - first:
+      213: -2178329607880195370
+    second: mmx1_f1_vile1_66
+  - first:
+      213: -8054800294516445326
+    second: mmx1_f1_vile1_67
+  - first:
+      213: 7484636477108885776
+    second: mmx1_f1_vile1_68
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 536
+        width: 55
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02910f370803afd4790d7cf0b4a7a3ba
+      internalID: -5090972474324034802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 536
+        width: 55
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537dcc86d105f204482ddaf3ce021b80
+      internalID: 221110036770052503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 536
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af4ee4a3a3734d4d8bfc80b2134894c
+      internalID: 7624875278345200255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_3
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 536
+        width: 55
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13b808a767c2724f86dba4377771463
+      internalID: 8864331123619449888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_4
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 536
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934e5649766216c4b85cc8afe31f5a54
+      internalID: 3636088523491866317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_5
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 536
+        width: 55
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ddfc229a4d06c47bc5bc81fb656bcf
+      internalID: -6070144003653446105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_6
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 536
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d99d001d1b2da3479c2d55c19677d53
+      internalID: -6901488124860251773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_7
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 536
+        width: 55
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82a1decb09a128409a8981a3eb31091
+      internalID: -5066211922381151711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_8
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 536
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f521cbfb849494e9cbef82a45c1f74
+      internalID: 9071729844572237764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 444
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c283627bcdf97784a9aad258d18fca8a
+      internalID: -6498725969195110037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_10
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 444
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd36720b46b3ca1489a38eab9bfbf610
+      internalID: 3125333312534979385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 444
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8ddf5e304f9884db8a99faccceb825
+      internalID: 511378804451219149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_12
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 444
+        width: 55
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2732bed8b17acc6499c8fc0dc664b856
+      internalID: -7565491833816198392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_13
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 444
+        width: 55
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99bc50095cff21e4bb4fe993706fd973
+      internalID: -5986949080111894833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_14
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 444
+        width: 55
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf4c19541c3cc44fab2b3f4ded0ca1c
+      internalID: 3594290949926620186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_15
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 444
+        width: 75
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9bb04d9a91f71f4e8f08b0229cd44f9
+      internalID: -5742783011007594317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_16
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 444
+        width: 82
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045fb324622f8e4449315ed11881d439
+      internalID: 871232807961318701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_17
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 444
+        width: 55
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9308eb4cd3f354aa0e17a668a23532
+      internalID: 8259944211669085765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_18
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 444
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06acac2a48f5c2f439ea1f36538841a7
+      internalID: -2068476826625768873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_19
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 340
+        width: 47
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065ab88400b9ff24e8cfefc085ca7b6c
+      internalID: 2400546687267303451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_20
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 340
+        width: 75
+        height: 73
+      alignment: 9
+      pivot: {x: 0.41123068, y: 0.4938597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730882bd20eadf44a891a278f9f08355
+      internalID: -6406749489573070935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_21
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 340
+        width: 82
+        height: 73
+      alignment: 9
+      pivot: {x: 0.35946172, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385b8402aba90674faf51e2092dddaf2
+      internalID: -4971267982166656794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_22
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 340
+        width: 77
+        height: 73
+      alignment: 9
+      pivot: {x: 0.37710175, y: 0.49285722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6badebf67100ee94a8f1156f992edf95
+      internalID: -850420482304329443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_23
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 340
+        width: 78
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aea3f8e337440342a35ed96531a0424
+      internalID: -7069201632335044699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_24
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 369
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0317434abf8e6054d991460442457fda
+      internalID: -8858026452708912925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_25
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 248
+        width: 55
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486d271c86c63414fa5976fffeb7f975
+      internalID: 7923635701821886264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_26
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 248
+        width: 55
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87058d17d88bde4eb4719ced97f1d98
+      internalID: 4576770389792141323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_27
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 248
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53013ba1304009d44aa1d8b38124d3da
+      internalID: -3873042885405598810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_28
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 248
+        width: 55
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13c6257372c1384780375d90a2ce933
+      internalID: -6997732255219014807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_29
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 248
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690d52b7394b956488f05f1043007aff
+      internalID: -6953296690555766815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_30
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 248
+        width: 55
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5f720b07b16f9419250f9634f13a3a
+      internalID: -7821018063862953383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_31
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 248
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1437e9efa7bc06046af7e76c5b5e3e1f
+      internalID: -6557871331990594524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_32
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 248
+        width: 55
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219e0158d992c8e44bf376023e623096
+      internalID: -5467820286862826803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_33
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 248
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f89bf5fd3d52849891d7ed111e556b
+      internalID: -1293079532398768683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_34
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 156
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541f98e22ea95fe458071d5199acf2c6
+      internalID: 6877019533768923279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_35
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 156
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2727376742ed25f42814d0254b0676f3
+      internalID: -3979822134713262516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_36
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 156
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a840850f221e82c43b133ea3bd0cfbe9
+      internalID: 6420297274374847716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_37
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 156
+        width: 55
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b1f43c58d88294397a371fed367cd9
+      internalID: -35086205873249841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_38
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 156
+        width: 55
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b71369b4eca21541a6b9949e0ce25e5
+      internalID: 2091556834259558041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_39
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 156
+        width: 55
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfa75e8e976a044cb52b78354ad0996
+      internalID: 6566912118572643538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_40
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 156
+        width: 75
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26218a0a1d1c2dc4a8746bc96ea6b1fe
+      internalID: 4585757581413925943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_41
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 156
+        width: 82
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca84894832a5e5d4791f333c504bbe37
+      internalID: 8148654208772278087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_42
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 156
+        width: 55
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a29168c10499b41be26a80379b49d2
+      internalID: 1467728509862758914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_43
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 156
+        width: 61
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7882034a5ea60d4a905c8eacaa4fd2a
+      internalID: 1343262103405131383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_44
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 52
+        width: 47
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef7427c793299b147b19fe1d21bf398d
+      internalID: -9183306414311260066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 52
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89cc4016a17323b4786535f96147eab9
+      internalID: -986239962914957191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_46
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 52
+        width: 82
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b5861b7dc069c4e83412f9ddfe4e37
+      internalID: -4339137141728820205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_47
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 102
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63dd9c5c487578748837bc21d270a425
+      internalID: 2130170020402268446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_48
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 102
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6829453398d474a42b0398032d8b12e5
+      internalID: 5715451701713072948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_49
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 102
+        width: 53
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5840cd6b98fbff440a64722809e4f744
+      internalID: 8392262610042927476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_50
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 102
+        width: 53
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806107b72310e2e4cbb7a4321a23373d
+      internalID: 7206931456645031655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_51
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 101
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50599ee6549ebe47a62345713024613
+      internalID: -8255603201512088071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_52
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 89
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298ecc74ff5aa664e919ce3b8eb0c4ec
+      internalID: 8892477841775504888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_53
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 93
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ed5df86bf6f3743833d0c591b45e5f
+      internalID: -8722771761304811875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_54
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 42
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723d185189851644a9555df27389b909
+      internalID: 7081686498858012838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_55
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 40
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b993ea067f319479ff86e068bb414b
+      internalID: -7143811650209485460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_56
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 36
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665b46a187c5f384d8af3839339a64a6
+      internalID: -6701423875736707277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_57
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 41
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84028512e437b648b24e12017e71d21
+      internalID: -7199472162359609087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_58
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 41
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62940e2b0ae13ec4e858136aca54d925
+      internalID: 745210687454878930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_59
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 41
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5298ba309f60d43ba80c04a43a9432
+      internalID: 4382812367586478769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_60
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 40
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7150234ad083eed4c958537ab4cb07f7
+      internalID: 5874525979852764984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_61
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 14
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab4f3e053f4d104097d81b2306fe24a
+      internalID: -852256877690470103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_62
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 6
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6bd6a0cfbce8142bc257291a70cfe0
+      internalID: -9209010206733453989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_63
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 10
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569751777ddf3024d871c2163d287aea
+      internalID: -293868771239757488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_64
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 12
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb9c8460e738d347b7b0e638f7a6e42
+      internalID: -7796320399287337518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_65
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 13
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233037da22c8a58499aed44cd9add63b
+      internalID: -571952658601702880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_66
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 11
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbcee5387dc56764b88c1c703ccab61c
+      internalID: -2178329607880195370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_67
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 12
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78a3e62fc595d844a4afcddf6d1a6ce
+      internalID: -8054800294516445326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmx1_f1_vile1_68
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 14
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5be70e97eea7345b1b49f830a637c5
+      internalID: 7484636477108885776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f70875290c6a1d740aaf106ba706dd06
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
