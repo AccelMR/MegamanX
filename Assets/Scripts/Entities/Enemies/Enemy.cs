@@ -26,7 +26,8 @@ public class Enemy : MonoBehaviour
 
   public virtual void Reset()
   {
-
+    m_Megaman = GameObject.FindGameObjectWithTag("Player").transform;
+    health = Max_Health;
   }
   public virtual void ShootTimer()
   {
@@ -42,8 +43,28 @@ public class Enemy : MonoBehaviour
       currentTime = reloadTime;
     }
   }
+
   public virtual void Shoot()
   {
     
+  }
+
+  protected virtual void OnTriggerEnter2D(Collider2D collision)
+  {
+    if (collision.gameObject.tag == "Bullet")
+    {
+      health -= 1;
+      collision.gameObject.GetComponent<Collider2D>().enabled = false;
+      Debug.Log("Enemy Hit.   New health = " + health);
+    }
+  }
+
+  public int Health
+  {
+    get { return health; }
+  }
+  public int MaxHealth
+  {
+    get { return Max_Health; }
   }
 }

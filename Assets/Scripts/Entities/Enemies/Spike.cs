@@ -53,4 +53,5 @@ public class Spike : Enemy
       Pos = new Vector3(-1, 0, 0);
     }
   }
+
 }
