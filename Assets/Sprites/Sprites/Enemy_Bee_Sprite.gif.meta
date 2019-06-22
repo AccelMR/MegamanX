@@ -1,0 +1,389 @@
+fileFormatVersion: 2
+guid: 13bd8629f4e43884aa07d2bef40f9832
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7449169796155998659
+    second: Enemy_Bee_Sprite_0
+  - first:
+      213: 2040329538304236381
+    second: Enemy_Bee_Sprite_1
+  - first:
+      213: 7625319328559894089
+    second: Enemy_Bee_Sprite_2
+  - first:
+      213: -9196936399953324852
+    second: Enemy_Bee_Sprite_3
+  - first:
+      213: 7146983634509176874
+    second: Enemy_Bee_Sprite_4
+  - first:
+      213: 7886137904594434506
+    second: Enemy_Bee_Sprite_5
+  - first:
+      213: 312206063297698085
+    second: Enemy_Bee_Sprite_6
+  - first:
+      213: 2220834657390706062
+    second: Enemy_Bee_Sprite_7
+  - first:
+      213: -5438814874221643132
+    second: Enemy_Bee_Sprite_8
+  - first:
+      213: 3713197980076757485
+    second: Enemy_Bee_Sprite_9
+  - first:
+      213: -2007949478157344321
+    second: Enemy_Bee_Sprite_10
+  - first:
+      213: 5191293307339267935
+    second: Enemy_Bee_Sprite_11
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_Bee_Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 29
+        width: 35
+        height: 36
+      alignment: 9
+      pivot: {x: 0.4343419, y: 0.44940007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4583b01ba09754aa93a6a6dde78c7d
+      internalID: 7449169796155998659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Bee_Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 28
+        width: 36
+        height: 38
+      alignment: 9
+      pivot: {x: 0.44926324, y: 0.43180466}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146f76e91d6a17642bb82416cf717cf3
+      internalID: 2040329538304236381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Bee_Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 28
+        width: 25
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4867584, y: 0.41445082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270309f1d325c9d468e41d13a2ceabec
+      internalID: 7625319328559894089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Bee_Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 28
+        width: 36
+        height: 39
+      alignment: 9
+      pivot: {x: 0.4486936, y: 0.44848037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec66fc6cf5410d34c8752d1650936a55
+      internalID: -9196936399953324852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Bee_Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 28
+        width: 25
+        height: 41
+      alignment: 9
+      pivot: {x: 0.48480043, y: 0.42926836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ac7c0fc751d9247a2f4f9ceeef848b
+      internalID: 7146983634509176874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Bee_Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 28
+        width: 35
+        height: 37
+      alignment: 9
+      pivot: {x: 0.4320003, y: 0.4670271}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b3e4443534e49479b018e5bde3748b
+      internalID: 7886137904594434506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Bee_Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 28
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 0.4477785, y: 0.46200007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad5aa05b4f062241a1544fa8cd3e19b
+      internalID: 312206063297698085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Bee_Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 28
+        width: 25
+        height: 42
+      alignment: 9
+      pivot: {x: 0.4856006, y: 0.4447619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36eb8b44c74d91c47beea4d624942394
+      internalID: 2220834657390706062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Bee_Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 28
+        width: 33
+        height: 38
+      alignment: 9
+      pivot: {x: 0.45962062, y: 0.48106334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23c6b309c891694eb9327d7214ed50e
+      internalID: -5438814874221643132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Bee_Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 4
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e5684491148a44aa6de17d4d7c42b9
+      internalID: 3713197980076757485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Bee_Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 4
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3a69e529d28664f86b5363cca126d8
+      internalID: -2007949478157344321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Bee_Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 4
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1663748b0e016774fbccb02fd0b07666
+      internalID: 5191293307339267935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f3a92bd6584c4e04b9f5efe50b820f0d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

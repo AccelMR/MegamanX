@@ -6,7 +6,8 @@ public class Camara : MonoBehaviour
 {
     //Variables
     public Transform Mega_Man;
-    public float Distancia_Camara = 30.0f;
+    public float Distancia_Camara;
+    public bool seguirY = false;
 
     void Awake()
     {
@@ -16,6 +17,18 @@ public class Camara : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(Mega_Man.position.x, Mega_Man.position.y, transform.position.z);
+        if (!seguirY)
+        {
+            transform.position = new Vector3(Mega_Man.position.x, 0, transform.position.z);
+        }
+        else
+        {
+            transform.position = new Vector3(Mega_Man.position.x, Mega_Man.position.y, transform.position.z);
+        }
+
+        if (transform.position.y >= 0)
+        {
+            seguirY = false;
+        }
     }
 }
