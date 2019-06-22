@@ -31,6 +31,20 @@ class MMFallState : State<Megaman>
     {
       m_pStateMachine.ToState(entity.idleState, entity);
     }
+    else if (Input.GetButtonDown("Shoot"))
+    {
+      entity.shoot(0.0f);
+    }
+    else if (Input.GetButton("Shoot"))
+    {
+      entity.TimeBtnPressed += Time.fixedDeltaTime;
+    }
+
+    if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.98f)
+    {
+      entity.shoot(entity.TimeBtnPressed);
+      entity.TimeBtnPressed = 0.0f;
+    }
 
     entity.DirectionX = dirX;
 
@@ -62,6 +76,20 @@ class MMFallState : State<Megaman>
     else if(entity.IsWalled && dirX != 0)
     {
       m_pStateMachine.ToState(entity.wallSlide, entity);
+    }
+    else if (Input.GetButtonDown("Shoot"))
+    {
+      entity.shoot(0.0f);
+    }
+    else if (Input.GetButton("Shoot"))
+    {
+      entity.TimeBtnPressed += Time.fixedDeltaTime;
+    }
+
+    if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.98f)
+    {
+      entity.shoot(entity.TimeBtnPressed);
+      entity.TimeBtnPressed = 0.0f;
     }
 
     entity.transform.position += new Vector3(0, -yPos, 0);

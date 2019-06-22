@@ -7,6 +7,11 @@ class MMWallSlideState : State<Megaman>
   public MMWallSlideState(StateMachine<Megaman> stateMachine)
      : base(stateMachine) { }
 
+  public override void OnStateEnter(Megaman entity)
+  {
+    entity.setAnim(ANIM_STATE.SLIDE);
+  }
+
   public override void OnStatePreUpdate(Megaman entity)
   {
     var dirX = Input.GetAxisRaw("Horizontal");
@@ -28,6 +33,21 @@ class MMWallSlideState : State<Megaman>
         m_pStateMachine.ToState(entity.idleState, entity);
       }
     }
+    else if (Input.GetButtonDown("Shoot"))
+    {
+      entity.shoot(0.0f);
+    }
+    else if (Input.GetButton("Shoot"))
+    {
+      entity.TimeBtnPressed += Time.fixedDeltaTime;
+    }
+
+    if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.98f)
+    {
+      entity.shoot(entity.TimeBtnPressed);
+      entity.TimeBtnPressed = 0.0f;
+    }
+
   }
 
   public override void OnStateUpdate(Megaman entity)
@@ -55,6 +75,20 @@ class MMWallSlideState : State<Megaman>
       {
         m_pStateMachine.ToState(entity.idleState, entity);
       }
+    }
+    else if (Input.GetButtonDown("Shoot"))
+    {
+      entity.shoot(0.0f);
+    }
+    else if (Input.GetButton("Shoot"))
+    {
+      entity.TimeBtnPressed += Time.fixedDeltaTime;
+    }
+
+    if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.98f)
+    {
+      entity.shoot(entity.TimeBtnPressed);
+      entity.TimeBtnPressed = 0.0f;
     }
   }
 }
