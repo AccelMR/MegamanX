@@ -1,0 +1,461 @@
+fileFormatVersion: 2
+guid: baedaeebcb80d4d558948679fbb89f80
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2347117783352046706
+    second: mmm-mmxstomper_0
+  - first:
+      213: -595659088292956880
+    second: mmm-mmxstomper_1
+  - first:
+      213: -356883562115805879
+    second: mmm-mmxstomper_2
+  - first:
+      213: -7050322253784877879
+    second: mmm-mmxstomper_3
+  - first:
+      213: 7359920353027312236
+    second: mmm-mmxstomper_4
+  - first:
+      213: -1566711321078022308
+    second: mmm-mmxstomper_5
+  - first:
+      213: -2536158613296116584
+    second: mmm-mmxstomper_6
+  - first:
+      213: 1913907834897607270
+    second: mmm-mmxstomper_7
+  - first:
+      213: 4884852774989782711
+    second: mmm-mmxstomper_8
+  - first:
+      213: -5467962333427358970
+    second: mmm-mmxstomper_9
+  - first:
+      213: -2859168487245455611
+    second: mmm-mmxstomper_10
+  - first:
+      213: -4173595250332601211
+    second: mmm-mmxstomper_11
+  - first:
+      213: -6749960520697462258
+    second: mmm-mmxstomper_12
+  - first:
+      213: 3034289287552972579
+    second: mmm-mmxstomper_13
+  - first:
+      213: 2781416089883908089
+    second: mmm-mmxstomper_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mmm-mmxstomper_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 16
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c5431ea1a1b4b2f8eeb234b9d3c654
+      internalID: -2347117783352046706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 16
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa00a787552fc4cee8c1b315c59eeea7
+      internalID: -595659088292956880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 16
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367a5517f957e40b4b83aa33e81d3971
+      internalID: -356883562115805879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 16
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54707ae56fe3846d3889a7d339e61e29
+      internalID: -7050322253784877879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_4
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 15
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6102d9d59d834c6095b14239bea6676
+      internalID: 7359920353027312236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_5
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 15
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2335227b7b3194ce5b41f7923cafeb7a
+      internalID: -1566711321078022308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_6
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 15
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3426f48cc7f2459e9e18f82e207589b
+      internalID: -2536158613296116584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_7
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 15
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69da57fa55e604f93a8030ad0c792f96
+      internalID: 1913907834897607270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_8
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 15
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9ea676ee3464798aa254d362a832c4
+      internalID: 4884852774989782711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 38
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1448d240637cc4eb8bac76736f535f6e
+      internalID: -5467962333427358970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 15
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3eafd5612643497b816b069d056010d
+      internalID: -2859168487245455611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_11
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 13
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2e64204e29d47a291805e5d8f6496a
+      internalID: -4173595250332601211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 10
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a6e28ce200c4e7e9a3057373753010
+      internalID: -6749960520697462258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_13
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 6
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3692998a9d234535b0c84f91c805215
+      internalID: 3034289287552972579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxstomper_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3724aba4acde34b219ba7056c7f893e4
+      internalID: 2781416089883908089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 02273e86f56b945b188505b56872b1fd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
