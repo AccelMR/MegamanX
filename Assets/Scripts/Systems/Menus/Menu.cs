@@ -23,9 +23,9 @@ public class Menu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        positions[0] = new Vector2(-93, -59);
-        positions[1] = new Vector2(-93, -77);
-        positions[2] = new Vector2(-93, -95);
+        positions[0] = new Vector2(-150.2f, -86.8f);
+        positions[1] = new Vector2(-150.2f, -113.8f);
+        positions[2] = new Vector2(-150.2f, -140.8f);
     }
 
     // Update is called once per frame

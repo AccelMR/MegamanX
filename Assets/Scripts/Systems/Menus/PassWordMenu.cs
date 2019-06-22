@@ -28,20 +28,20 @@ public class PassWordMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Positions[0] = new Vector2(-72.2f, 72.2f);
-        Positions[1] = new Vector2(-24.0f, 72.2f);
-        Positions[2] = new Vector2(24.0f, 72.2f);
-        Positions[3] = new Vector2(72.2f, 72.2f);
+        Positions[0] = new Vector2(-162.53f, 158.969f);
+        Positions[1] = new Vector2(-57.3f, 158.969f);
+        Positions[2] = new Vector2(48, 158.969f);
+        Positions[3] = new Vector2(153.3f, 158.969f);
 
-        Positions[4] = new Vector2(-72.2f, 24);
-        Positions[5] = new Vector2(-24, 24);
-        Positions[6] = new Vector2(24, 24);
-        Positions[7] = new Vector2(72.0f, 24);
+        Positions[4] = new Vector2(-162.53f, 54);
+        Positions[5] = new Vector2(-57.3f, 54);
+        Positions[6] = new Vector2(48, 54);
+        Positions[7] = new Vector2(153.3f, 54);
 
-        Positions[8] = new Vector2(-72.0f, -24);
-        Positions[9] = new Vector2(-24, -24);
-        Positions[10] = new Vector2(24, -24);
-        Positions[11] = new Vector2(72.2f, -24);
+        Positions[8] = new Vector2(-162.53f, -49);
+        Positions[9] = new Vector2(-57.3f, -49);
+        Positions[10] = new Vector2(48, -49);
+        Positions[11] = new Vector2(153.3f, -49);
 
         Monitos[0].SetBool("selected", true);
         Monitos[0].SetBool("walk", true);
