@@ -39,7 +39,8 @@ class MMFallState : State<Megaman>
     {
       entity.TimeBtnPressed += Time.fixedDeltaTime;
     }
-    else if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 1.0f)
+
+    if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.98f)
     {
       entity.shoot(entity.TimeBtnPressed);
       entity.TimeBtnPressed = 0.0f;
@@ -84,7 +85,8 @@ class MMFallState : State<Megaman>
     {
       entity.TimeBtnPressed += Time.fixedDeltaTime;
     }
-    else if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 1.0f)
+
+    if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.98f)
     {
       entity.shoot(entity.TimeBtnPressed);
       entity.TimeBtnPressed = 0.0f;

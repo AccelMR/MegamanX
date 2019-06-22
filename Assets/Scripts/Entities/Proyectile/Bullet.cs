@@ -37,6 +37,12 @@ public class Bullet : MonoBehaviour
   [SerializeField]
   private float m_offsetY;
 
+  private float m_livingTime;
+
+
+  [SerializeField]
+  private float m_debugTime;
+
   
   // Start is called before the first frame update
   void Start()
@@ -45,6 +51,10 @@ public class Bullet : MonoBehaviour
     m_collider = GetComponent<BoxCollider2D>();
     m_wasShoot = false;
     m_dir = 0.0f;
+    m_livingTime = 0.0f;
+
+    //
+    m_debugTime = 0.0f;
 
   }
 
@@ -56,22 +66,29 @@ public class Bullet : MonoBehaviour
   //Fixed Update
   private void FixedUpdate()
   {
-    if(m_wasShoot /*&& m_renderer.enabled*/)
+    if(m_wasShoot)
     {
-      float xPos = m_velocity * Time.fixedDeltaTime * m_dir;
+      m_livingTime += Time.fixedDeltaTime;
+
+      float xPos = Time.fixedDeltaTime * m_velocity * m_dir;
 
       transform.position += new Vector3(xPos, 0.0f, 0.0f);
+
+      //Debug
+      m_debugTime += Time.fixedDeltaTime;
     }
     if (!m_renderer.isVisible && m_wasShoot)
     {
       disable(false);
+
+      //Debug
+      Debug.Log(m_debugTime);
+      m_debugTime = 0.0f;
     }
   }
 
   public void beeingShot(Vector3 characterPos, float dir)
   {
-    Debug.Log("Single shoot");
-
     if (m_collider.enabled) return;
     
     disable(true);
@@ -91,6 +108,10 @@ public class Bullet : MonoBehaviour
     }
 
     m_dir = dir;
+
+    //Debug
+    m_debugTime = 0.0f;
+
   }
 
   private void OnTriggerEnter2D(Collider2D collision)
@@ -104,7 +125,6 @@ public class Bullet : MonoBehaviour
       return;
     }
 
-    //transform.position = new Vector3(0.0f, 0.0f, 0.0f);
     disable(false);
   }
 
@@ -113,6 +133,12 @@ public class Bullet : MonoBehaviour
     m_wasShoot = bul;
     m_collider.enabled = bul;
     m_renderer.enabled = bul;
+    m_livingTime = 0.0f;
+
+    if (Anim)
+    {
+      Anim.SetBool("Init", false);
+    }
   }
 
 }

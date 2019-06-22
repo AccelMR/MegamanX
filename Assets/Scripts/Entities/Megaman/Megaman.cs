@@ -12,6 +12,7 @@ using UnityEngine;
     JUMP_ATTACK,
     ATTACK,
     MOVE_ATTACK,
+    SLIDE,
     DIE
   }
 
@@ -132,7 +133,11 @@ partial class Megaman : Boid
 
   public void Update()
   {
-    
+    if(!Input.GetButton("Shoot") )
+    {
+      if (TimeBtnPressed > 0.9f) shoot(TimeBtnPressed);
+      TimeBtnPressed = 0.0f;
+    }
   }
 
   public void FixedUpdate()
@@ -170,18 +175,16 @@ partial class Megaman : Boid
 
     if (time >= 0.0f && time < 1.0f)
     {
-     // Debug.Log("Single shoot");
       m_bullets[m_indexBullet].beeingShot(transform.position, m_directionX);
     }
     else if(time > 1.0f && time < 2.5f)
     {
-      //TODO: handle second shoot
       m_greenBullet.beeingShot(transform.position, m_directionX);
+
     }
     else if(time > 2.5)
     {
-      //TODO: handle massive shoot
-     // Debug.Log("Third shoot");
+      m_blueBullet.beeingShot(transform.position, m_directionX);
     }
   }
 
