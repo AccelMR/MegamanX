@@ -15,6 +15,7 @@ class MMMoveState : State<Megaman>
   public override void OnStatePreUpdate(Megaman entity)
   {
     float dir = Input.GetAxisRaw("Horizontal");
+
     entity.VelocityX = dir * entity.Speed;
     entity.DirectionX = dir;
     if(!entity.IsGrounded)
@@ -34,6 +35,7 @@ class MMMoveState : State<Megaman>
   public override void OnStateUpdate(Megaman entity)
   {
     float dir = Input.GetAxisRaw("Horizontal");
+
     entity.VelocityX = dir * entity.Speed;
 
     if (dir == 0.0f)

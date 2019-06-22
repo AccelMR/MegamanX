@@ -42,6 +42,14 @@ class MMFallState : State<Megaman>
     entity.airTime += Time.fixedDeltaTime;
 
     var dirX = Input.GetAxisRaw("Horizontal");
+    entity.DirectionX = dirX;
+
+    m_timeFalling += Time.fixedDeltaTime;
+
+    float normTime = Mathf.Clamp01(m_timeFalling);
+    float lapse = Mathf.Pow(normTime, 2);
+
+    float yPos = Mathf.Lerp(0, entity.MaxJump, normTime);
 
     if (entity.IsGrounded && dirX > 0.0f)
     {
@@ -51,15 +59,11 @@ class MMFallState : State<Megaman>
     {
       m_pStateMachine.ToState(entity.idleState, entity);
     }
+    else if(entity.IsWalled && dirX != 0)
+    {
+      m_pStateMachine.ToState(entity.wallSlide, entity);
+    }
 
-    entity.DirectionX = dirX;
-
-    m_timeFalling += Time.fixedDeltaTime;
-
-    float normTime = Mathf.Clamp01(m_timeFalling);
-    float lapse = Mathf.Pow(normTime, 2);
-
-    float yPos = Mathf.Lerp(0, entity.MaxJump, normTime);
     entity.transform.position += new Vector3(0, -yPos, 0);
 
   }
