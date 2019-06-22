@@ -13,11 +13,24 @@ using UnityEngine;
     ATTACK,
     MOVE_ATTACK,
     SLIDE,
+    DAMAGE,
     DIE
   }
 
 partial class Megaman : Boid
 {
+  /// <summary>
+  /// Health with getter
+  /// </summary>
+  [SerializeField]
+  private int m_health;
+  public int Health { get { return m_health; } }
+
+  /// <summary>
+  /// if player can be damaged
+  /// </summary>
+  private bool m_canDamage;
+
   /// <summary>
   /// how fast mega man will move on horizontal direction
   /// </summary>
@@ -62,6 +75,10 @@ partial class Megaman : Boid
     get { return m_animState; }
     set { m_animState = value; }
   }
+
+  private ANIM_STATE m_prevState;
+
+  private float m_recoveryTime;
 
   /// <summary>
   /// temporal
@@ -117,6 +134,7 @@ partial class Megaman : Boid
   /// Debug stuff
   /// </summary>
   public float airTime = 0;
+  public bool addDmg = false;
 
 
   private void Awake()
@@ -128,6 +146,7 @@ partial class Megaman : Boid
     m_timeShootBtnPressed = 0;
     m_directionX = 1.0f;
     m_indexBullet = -1;
+    m_recoveryTime = 0.0f;
 
     //Instantiate shit, I'm getting sick of this jajajejejejjiji
     m_bullets.Add(GameObject.Find("Bullet").GetComponent<Bullet>());
@@ -135,6 +154,8 @@ partial class Megaman : Boid
     m_bullets.Add(GameObject.Find("Bullet (2)").GetComponent<Bullet>());
     m_greenBullet = GameObject.Find("GreenBullet").GetComponent<Bullet>();
     m_blueBullet = GameObject.Find("BlueBullet").GetComponent<Bullet>();
+
+    m_canDamage = true;
 
     //Initialize State Machine
     InitStateMachine();
@@ -147,11 +168,29 @@ partial class Megaman : Boid
       if (TimeBtnPressed > 0.9f) shoot(TimeBtnPressed);
       TimeBtnPressed = 0.0f;
     }
+    if(addDmg)
+    {
+      addDamage(1);
+    }
   }
 
   public void FixedUpdate()
   {
-    m_stateMachine.OnState(this);
+    if(m_recoveryTime >= 1.43f)
+    {
+      m_recoveryTime = 0.0f;
+      m_canDamage = true;
+      transform.position += new Vector3(-DirectionX * Time.fixedDeltaTime * 2f, 0.0f, 0.0f);
+    }
+
+    if (m_canDamage)
+    { 
+      m_stateMachine.OnState(this);
+    }
+    else
+    {
+      m_recoveryTime += Time.fixedDeltaTime;
+    }
 
     Move();
   }
@@ -223,6 +262,17 @@ partial class Megaman : Boid
     }
     else if (m_isWalled) m_isWalled = false;
     else if (m_isGround) m_isGround = false;
+  }
+
+  public void addDamage(int dmg)
+  {
+    if (m_canDamage)
+    {
+      //setAnim(ANIM_STATE.DAMAGE);
+      m_animator.SetTrigger("Dmg");
+      m_health -= dmg;
+      m_canDamage = false;
+    }
   }
 
 }
