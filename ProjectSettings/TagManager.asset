@@ -7,6 +7,8 @@ TagManager:
   - PlayerHealth
   - Enemy
   - ChargedBeam
+  - spin
+  - Crusher
   layers:
   - Default
   - TransparentFX
