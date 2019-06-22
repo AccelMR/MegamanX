@@ -129,6 +129,13 @@ partial class Megaman : Boid
     m_directionX = 1.0f;
     m_indexBullet = -1;
 
+    //Instantiate shit, I'm getting sick of this jajajejejejjiji
+    m_bullets.Add(GameObject.Find("Bullet").GetComponent<Bullet>());
+    m_bullets.Add(GameObject.Find("Bullet (1)").GetComponent<Bullet>());
+    m_bullets.Add(GameObject.Find("Bullet (2)").GetComponent<Bullet>());
+    m_greenBullet = GameObject.Find("GreenBullet").GetComponent<Bullet>();
+    m_blueBullet = GameObject.Find("BlueBullet").GetComponent<Bullet>();
+
     //Initialize State Machine
     InitStateMachine();
   }
