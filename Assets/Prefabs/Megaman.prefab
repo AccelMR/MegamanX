@@ -239,11 +239,13 @@ MonoBehaviour:
   m_isWalled: 0
   m_timeShootBtnPressed: 0
   m_bullets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_greenBullet: {fileID: 0}
-  m_blueBullet: {fileID: 0}
+  - {fileID: 2229556262611733139, guid: 2363d6b89a020f6469b045fb216d74ff, type: 3}
+  - {fileID: 2229556262611733139, guid: 2363d6b89a020f6469b045fb216d74ff, type: 3}
+  - {fileID: 2229556262611733139, guid: 2363d6b89a020f6469b045fb216d74ff, type: 3}
+  m_greenBullet: {fileID: 814107554538840693, guid: 4751d8a1a68a37541aac198aa6f85031,
+    type: 3}
+  m_blueBullet: {fileID: 4821736746196979569, guid: b9a7a091e6ad60d44b78a79a305fea8f,
+    type: 3}
   airTime: 0
 --- !u!50 &7853993766870943027
 Rigidbody2D:

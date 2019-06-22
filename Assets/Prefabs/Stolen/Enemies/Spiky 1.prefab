@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4101433812625863344}
   m_Layer: 12
   m_Name: Spiky 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Megaman: {fileID: 0}
+  reloadTime: 0
   m_speed: 1.75
   Max_Health: 4
 --- !u!95 &4101433812625863345

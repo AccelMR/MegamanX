@@ -42,6 +42,10 @@ class MMIdleState : State<Megaman>
       entity.shoot(entity.TimeBtnPressed);
       entity.TimeBtnPressed = 0.0f;
     }
+    if (!entity.IsGrounded && !Input.GetButtonDown("Jump"))
+    {
+      m_pStateMachine.ToState(entity.fallState, entity);
+    }
   }
 
   public override void OnStateUpdate(Megaman entity)

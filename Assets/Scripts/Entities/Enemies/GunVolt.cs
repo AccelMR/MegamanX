@@ -89,6 +89,10 @@ public class GunVolt : Enemy
     }
     else
     {
+      if(shotNumber == 1)
+      {
+        GetComponent<Animator>().SetTrigger("shotTrigger");
+      }
       shots[shotType + shotNumber].SetActive(true);
       shots[shotType + shotNumber].GetComponent<Projectile>().Activate(transform.position);
     }
