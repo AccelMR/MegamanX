@@ -234,6 +234,8 @@ partial class Megaman : Boid
 
   private void OnCollisionEnter2D(Collision2D collision)
   {
+    if(collision.collider.CompareTag("TriggerLimit")) { return; }
+
     var v = collision.contacts[0].normal;
     if (collision.transform.tag == "Bullet") return;
     if (v == Vector2.right || v == Vector2.left )

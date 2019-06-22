@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 4253648966557690748}
   - component: {fileID: 7853993766870943027}
   - component: {fileID: 3612648872837286560}
-  - component: {fileID: 685495408469251063}
+  - component: {fileID: 5298265494796390363}
   m_Layer: 10
   m_Name: Megaman
   m_TagString: Player
@@ -171,7 +171,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.04, y: 0}
   m_Size: {x: 0.2, y: 0.58}
   m_Direction: 0
---- !u!114 &685495408469251063
+--- !u!114 &5298265494796390363
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4001843687458377779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ac7fc0fff35ace4ebe21f33cc49eb69, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e96cf1d2247ead4b9639087b7ed0bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interpolateMovement: 0
@@ -196,3 +196,4 @@ MonoBehaviour:
   m_greenBullet: {fileID: 0}
   m_blueBullet: {fileID: 0}
   airTime: 0
+  addDmg: 0
