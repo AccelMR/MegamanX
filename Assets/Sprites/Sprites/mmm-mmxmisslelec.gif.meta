@@ -1,36 +1,90 @@
 fileFormatVersion: 2
 guid: 60ca3839baa42be4098e860672e179dc
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: mmm-mmxmisslelec_0
-    21300002: mmm-mmxmisslelec_1
-    21300004: mmm-mmxmisslelec_2
-    21300006: mmm-mmxmisslelec_3
-    21300008: mmm-mmxmisslelec_4
-    21300010: mmm-mmxmisslelec_5
-    21300012: mmm-mmxmisslelec_6
-    21300014: mmm-mmxmisslelec_7
-    21300016: mmm-mmxmisslelec_8
-    21300018: mmm-mmxmisslelec_9
-    21300020: mmm-mmxmisslelec_10
-    21300022: mmm-mmxmisslelec_11
-    21300024: mmm-mmxmisslelec_12
-    21300026: mmm-mmxmisslelec_13
-    21300028: mmm-mmxmisslelec_14
-    21300030: mmm-mmxmisslelec_15
-    21300032: mmm-mmxmisslelec_16
-    21300034: mmm-mmxmisslelec_17
-    21300036: mmm-mmxmisslelec_18
-    21300038: mmm-mmxmisslelec_19
-    21300040: mmm-mmxmisslelec_20
-    21300042: mmm-mmxmisslelec_21
-    21300044: mmm-mmxmisslelec_22
-    21300046: mmm-mmxmisslelec_23
-    21300048: mmm-mmxmisslelec_24
-    21300050: mmm-mmxmisslelec_25
-    21300052: mmm-mmxmisslelec_26
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: mmm-mmxmisslelec_0
+  - first:
+      213: 21300002
+    second: mmm-mmxmisslelec_1
+  - first:
+      213: 21300004
+    second: mmm-mmxmisslelec_2
+  - first:
+      213: 21300006
+    second: mmm-mmxmisslelec_3
+  - first:
+      213: 21300008
+    second: mmm-mmxmisslelec_4
+  - first:
+      213: 21300010
+    second: mmm-mmxmisslelec_5
+  - first:
+      213: 21300012
+    second: mmm-mmxmisslelec_6
+  - first:
+      213: 21300014
+    second: mmm-mmxmisslelec_7
+  - first:
+      213: 21300016
+    second: mmm-mmxmisslelec_8
+  - first:
+      213: 21300018
+    second: mmm-mmxmisslelec_9
+  - first:
+      213: 21300020
+    second: mmm-mmxmisslelec_10
+  - first:
+      213: 21300022
+    second: mmm-mmxmisslelec_11
+  - first:
+      213: 21300024
+    second: mmm-mmxmisslelec_12
+  - first:
+      213: 21300026
+    second: mmm-mmxmisslelec_13
+  - first:
+      213: 21300028
+    second: mmm-mmxmisslelec_14
+  - first:
+      213: 21300030
+    second: mmm-mmxmisslelec_15
+  - first:
+      213: 21300032
+    second: mmm-mmxmisslelec_16
+  - first:
+      213: 21300034
+    second: mmm-mmxmisslelec_17
+  - first:
+      213: 21300036
+    second: mmm-mmxmisslelec_18
+  - first:
+      213: 21300038
+    second: mmm-mmxmisslelec_19
+  - first:
+      213: 21300040
+    second: mmm-mmxmisslelec_20
+  - first:
+      213: 21300042
+    second: mmm-mmxmisslelec_21
+  - first:
+      213: 21300044
+    second: mmm-mmxmisslelec_22
+  - first:
+      213: 21300046
+    second: mmm-mmxmisslelec_23
+  - first:
+      213: 21300048
+    second: mmm-mmxmisslelec_24
+  - first:
+      213: 21300050
+    second: mmm-mmxmisslelec_25
+  - first:
+      213: 21300052
+    second: mmm-mmxmisslelec_26
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -48,6 +102,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -56,9 +112,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 1
     aniso: 1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -70,18 +126,32 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -108,6 +178,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 076de39c3c40ca047a902c31707988e3
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_1
       rect:
@@ -122,6 +199,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 5281288fa19e31b4fb3b98fe053f7933
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_2
       rect:
@@ -136,6 +220,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 4e95a47ffe841a44abad52ae8b4498fd
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_3
       rect:
@@ -150,6 +241,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 717a3f7711417f649940cdc3b8fabb83
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_4
       rect:
@@ -164,6 +262,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 09e13501e7367b04ab7619a4f1fd0edb
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_5
       rect:
@@ -178,6 +283,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 7adc708c8aabe834d9f1f3458549972c
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_6
       rect:
@@ -192,6 +304,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: c393b6a37579e9147889841a511d0289
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_7
       rect:
@@ -206,6 +325,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: a1b31d7e25791204489476083e8380ea
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_8
       rect:
@@ -220,6 +346,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 10db72d1f7cd0ed41a0de73462fddb0b
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_9
       rect:
@@ -234,6 +367,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 3a8c2e6f4b9a77c4aacab51e0a64fea8
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_10
       rect:
@@ -248,6 +388,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: d62b934b2c16d094c8dfb2e555610e16
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_11
       rect:
@@ -262,6 +409,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 16f77438ffc40d94fada47a814980f60
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_12
       rect:
@@ -276,6 +430,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 97cfb3cbdc7e59f449e18c4d8e31cdaa
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_13
       rect:
@@ -290,6 +451,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: d9c9bd4d14592b649bf6ae03cda9f3a4
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_14
       rect:
@@ -304,6 +472,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: bb6dbfe415af3d9488cef2d6e58e0642
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_15
       rect:
@@ -318,6 +493,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: fa7aea2191aef6449b7ebc6655faca3a
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_16
       rect:
@@ -332,6 +514,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 3733c94cba11500459374ccf2b7b96fc
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_17
       rect:
@@ -346,6 +535,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: ee259def33718ee4b846d6337289e76f
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_18
       rect:
@@ -360,6 +556,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: fdec85b975c641f469a8dcd416c51dcd
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_19
       rect:
@@ -374,6 +577,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: bd0813121516d064c9e4366c9c828917
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_20
       rect:
@@ -388,6 +598,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 41e04ecffe42f6243b1146bc95f99854
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_21
       rect:
@@ -402,6 +619,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 41709ba4817484a4b9f305d980a568e7
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_22
       rect:
@@ -416,6 +640,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 4112e12a2ddc32844a7ca388c50639bf
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_23
       rect:
@@ -430,6 +661,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: fd5305c101287304ba652cea60344963
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_24
       rect:
@@ -444,6 +682,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: ffa03e43a229aac48a2ab00f4a6909b7
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_25
       rect:
@@ -458,6 +703,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 78c4d20c7e8354c419a1131db637c8d8
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mmm-mmxmisslelec_26
       rect:
@@ -472,9 +724,26 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: -1
+      bones: []
+      spriteID: 05fdda379a0e3904ca123987f6ea41b1
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

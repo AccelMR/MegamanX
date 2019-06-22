@@ -74,7 +74,6 @@ public class Blocks : MonoBehaviour
 
   private void OnCollisionExit2D(Collision2D collision)
   {
-
     //collision.collider.transform.SetParent(transform,false);
     m_wasTouched = false;
   }
