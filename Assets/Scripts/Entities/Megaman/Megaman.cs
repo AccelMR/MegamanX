@@ -18,8 +18,6 @@ using UnityEngine;
 
 partial class Megaman : Boid
 {
-
-
   /// <summary>
   /// how fast mega man will move on horizontal direction
   /// </summary>
@@ -146,17 +144,9 @@ partial class Megaman : Boid
 
   public void FixedUpdate()
   {
-    updateGrounded();
-
     m_stateMachine.OnState(this);
 
     Move();
-  }
-
-  private void updateGrounded()
-  {
-    m_isGround = m_collider.IsTouchingLayers(m_floor);
-    m_isWalled = m_collider.IsTouchingLayers(m_wall);
   }
 
   public void setAnim(ANIM_STATE state)
@@ -172,24 +162,61 @@ partial class Megaman : Boid
     transform.GetChild(0).localScale = scale;
   }
 
-  public void shoot(float time)
+  public void shoot(float time, float dir = 0.0f)
   {
+    if(dir == 0.0f)
+    {
+      dir = m_directionX;
+    }
+
     m_indexBullet++;
     if (m_indexBullet > 2) m_indexBullet = 0;
 
     if (time >= 0.0f && time < 1.0f)
     {
-      m_bullets[m_indexBullet].beeingShot(transform.position, m_directionX);
+      m_bullets[m_indexBullet].beeingShot(transform.position, dir);
     }
     else if(time > 1.0f && time < 2.5f)
     {
-      m_greenBullet.beeingShot(transform.position, m_directionX);
+      m_greenBullet.beeingShot(transform.position, dir);
 
     }
     else if(time > 2.5)
     {
-      m_blueBullet.beeingShot(transform.position, m_directionX);
+      m_blueBullet.beeingShot(transform.position, dir);
     }
+  }
+
+  private void OnCollisionEnter2D(Collision2D collision)
+  {
+    var v = collision.contacts[0].normal;
+    if (collision.transform.tag == "Bullet") return;
+    if (v == Vector2.right || v == Vector2.left )
+    {
+      m_isWalled = true;
+    }
+    if(v == Vector2.up)
+    {
+      m_isGround = true;
+    }
+  }
+
+  private void OnCollisionExit2D(Collision2D collision)
+  {
+    if (collision.transform.tag == "Bullet") return;
+    if (m_isWalled && m_isGround)
+    {
+      if(Input.GetButton("Jump"))
+      {
+        m_isGround = false;
+      }
+      else
+      {
+        m_isWalled = false;
+      }
+    }
+    else if (m_isWalled) m_isWalled = false;
+    else if (m_isGround) m_isGround = false;
   }
 
 }

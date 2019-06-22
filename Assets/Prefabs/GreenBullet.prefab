@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_velocity: 6
-  m_offsetX: 0.35
+  m_offsetX: 0.45
   m_offsetY: 0.02
   m_debugTime: 0
 --- !u!61 &740394624081382860

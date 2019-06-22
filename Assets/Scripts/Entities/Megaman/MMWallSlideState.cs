@@ -20,16 +20,15 @@ class MMWallSlideState : State<Megaman>
 
     if (Input.GetButtonDown("Shoot"))
     {
-      entity.shoot(0.0f);
+      entity.shoot(0.0f, -dirX);
     }
     else if (Input.GetButton("Shoot"))
     {
       entity.TimeBtnPressed += Time.fixedDeltaTime;
     }
-
     if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.98f)
     {
-      entity.shoot(entity.TimeBtnPressed);
+      entity.shoot(entity.TimeBtnPressed, -dirX);
       entity.TimeBtnPressed = 0.0f;
     }
 
@@ -61,7 +60,7 @@ class MMWallSlideState : State<Megaman>
 
     if (Input.GetButtonDown("Shoot"))
     {
-      entity.shoot(0.0f);
+      entity.shoot(0.0f, -dirX);
     }
     else if (Input.GetButton("Shoot"))
     {
@@ -69,7 +68,7 @@ class MMWallSlideState : State<Megaman>
     }
     if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.98f)
     {
-      entity.shoot(entity.TimeBtnPressed);
+      entity.shoot(entity.TimeBtnPressed, -dirX);
       entity.TimeBtnPressed = 0.0f;
     }
 
@@ -95,6 +94,7 @@ class MMWallSlideState : State<Megaman>
 
     if(Input.GetButtonDown("Jump"))
     {
+      entity.VelocityX = -dirX * 8.0f;
       m_pStateMachine.ToState(entity.jumpState, entity);
     }
 

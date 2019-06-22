@@ -116,16 +116,13 @@ public class Bullet : MonoBehaviour
 
   private void OnTriggerEnter2D(Collider2D collision)
   {
-    if (collision.CompareTag("Player"))
-    {
-      return;
-    }
-    if (collision.CompareTag("Bullet"))
-    {
-      return;
-    }
+    if (collision.CompareTag("Player")) { return; }
+    if (collision.CompareTag("Bullet")) { return; }
 
-    disable(false);
+    if(collision.CompareTag("Enemy"))
+    {
+      disable(false);
+    }
   }
 
   private void disable(bool bul)
