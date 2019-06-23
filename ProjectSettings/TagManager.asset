@@ -9,6 +9,10 @@ TagManager:
   - ChargedBeam
   - Bullet
   - TriggerLimit
+  - Cambio1
+  - Cambio2
+  - FirstFloor
+  - Projectile
   layers:
   - Default
   - TransparentFX

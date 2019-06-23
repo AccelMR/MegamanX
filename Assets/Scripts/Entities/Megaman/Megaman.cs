@@ -339,8 +339,13 @@ partial class Megaman : Boid
   /// NOTE: depending on the projection vector is which flag is active
   private void OnCollisionEnter2D(Collision2D collision)
   {
+    if (collision.collider.CompareTag("Enemy"))
+    {
+      Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
+    }
+
     //Don't use this tag on anything, just for camera stuff
-    if(collision.collider.CompareTag("TriggerLimit")) { return; }
+    if (collision.collider.CompareTag("TriggerLimit")) { return; }
 
 
     var v = collision.contacts[0].normal;
@@ -360,7 +365,18 @@ partial class Megaman : Boid
       m_isWalled = true;
     }
   }
+  private void OnTriggerEnter2D(Collider2D collision)
+  {
+    if (collision.CompareTag("Enemy"))
+    {
+      addDamage(collision.gameObject.GetComponent<Enemy>().Damage);
+    }
+    if (collision.CompareTag("Projectile"))
+    {
+      addDamage(collision.gameObject.GetComponent<Projectile>().Damage);
 
+    }
+  }
   /// <summary>
   /// Collision Exit
   /// </summary>

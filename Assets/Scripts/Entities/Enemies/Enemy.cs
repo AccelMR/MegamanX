@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
   protected bool canShoot;
   //Stats
   [SerializeField] protected float m_speed;
+  [SerializeField] protected int damage;
   [SerializeField] protected int Max_Health;
   protected int health;
   protected Vector3 Pos;
@@ -63,8 +64,12 @@ public class Enemy : MonoBehaviour
   {
     get { return health; }
   }
-  public int MaxHealth
+  public virtual int MaxHealth
   {
     get { return Max_Health; }
+  }
+  public virtual int Damage
+  {
+    get { return damage; }
   }
 }
