@@ -1,0 +1,965 @@
+fileFormatVersion: 2
+guid: 8edba46940857464997d7820b7ee3541
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9111785646518924535
+    second: mmm-mmxwalkingball_0
+  - first:
+      213: -8443465469882424643
+    second: mmm-mmxwalkingball_1
+  - first:
+      213: -7550434725773975625
+    second: mmm-mmxwalkingball_2
+  - first:
+      213: -4353875828613123669
+    second: mmm-mmxwalkingball_3
+  - first:
+      213: -3152540453152859326
+    second: mmm-mmxwalkingball_4
+  - first:
+      213: -3458865248845307059
+    second: mmm-mmxwalkingball_5
+  - first:
+      213: -7911049772817977138
+    second: mmm-mmxwalkingball_6
+  - first:
+      213: -6487529783291080459
+    second: mmm-mmxwalkingball_7
+  - first:
+      213: 7446646400060947189
+    second: mmm-mmxwalkingball_8
+  - first:
+      213: 2083176652206113881
+    second: mmm-mmxwalkingball_9
+  - first:
+      213: 2603627000201258742
+    second: mmm-mmxwalkingball_10
+  - first:
+      213: 8140931318037241699
+    second: mmm-mmxwalkingball_11
+  - first:
+      213: 8288743055709707637
+    second: mmm-mmxwalkingball_12
+  - first:
+      213: -4042381751056654977
+    second: mmm-mmxwalkingball_13
+  - first:
+      213: -6920265732120264634
+    second: mmm-mmxwalkingball_14
+  - first:
+      213: -1360454821487283098
+    second: mmm-mmxwalkingball_15
+  - first:
+      213: -7659690407259244544
+    second: mmm-mmxwalkingball_16
+  - first:
+      213: -885869522274413845
+    second: mmm-mmxwalkingball_17
+  - first:
+      213: 7547901279054375352
+    second: mmm-mmxwalkingball_18
+  - first:
+      213: -5500235441701301141
+    second: mmm-mmxwalkingball_19
+  - first:
+      213: 194756855908230386
+    second: mmm-mmxwalkingball_20
+  - first:
+      213: -4909435775355876085
+    second: mmm-mmxwalkingball_21
+  - first:
+      213: 441466258272664697
+    second: mmm-mmxwalkingball_22
+  - first:
+      213: 6157533070244746044
+    second: mmm-mmxwalkingball_23
+  - first:
+      213: -7188834056107468121
+    second: mmm-mmxwalkingball_24
+  - first:
+      213: -6620683415045169986
+    second: mmm-mmxwalkingball_25
+  - first:
+      213: -4910089742301816719
+    second: mmm-mmxwalkingball_26
+  - first:
+      213: -3788571667159948353
+    second: mmm-mmxwalkingball_27
+  - first:
+      213: 7878639252364173178
+    second: mmm-mmxwalkingball_28
+  - first:
+      213: -7584717053219433458
+    second: mmm-mmxwalkingball_29
+  - first:
+      213: -8774133927633289340
+    second: mmm-mmxwalkingball_30
+  - first:
+      213: 8503288454792670420
+    second: mmm-mmxwalkingball_31
+  - first:
+      213: 4512915746691634376
+    second: mmm-mmxwalkingball_32
+  - first:
+      213: 8661395720923536455
+    second: mmm-mmxwalkingball_33
+  - first:
+      213: 3326199419068631402
+    second: mmm-mmxwalkingball_34
+  - first:
+      213: -2089839706169004938
+    second: mmm-mmxwalkingball_35
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 142
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852b0134f714e4c54bcdf42cf8cb9018
+      internalID: -9111785646518924535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 141
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e8583e831e04aee952dd1d748eece2
+      internalID: -8443465469882424643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 141
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76d02d46f6eb4ce6a8c806834a7126c
+      internalID: -7550434725773975625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 137
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cc8676cb985424cbecaff696406e62
+      internalID: -4353875828613123669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 142
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf17f03e1e7ad4562ab37732d0a5efc6
+      internalID: -3152540453152859326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 142
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c0bcd91795044968a650b2aac6a9c9
+      internalID: -3458865248845307059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_6
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 140
+        width: 58
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4681703b77f074bb28feb12c9c717f5c
+      internalID: -7911049772817977138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_7
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 141
+        width: 55
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55103d02128864d1dbaad4942fcd900b
+      internalID: -6487529783291080459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_8
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 141
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e885d654a17be4d2fa4d8ab31c0effe8
+      internalID: 7446646400060947189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_9
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 140
+        width: 56
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767d8b2b7bb964fb1b129253c907a420
+      internalID: 2083176652206113881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_10
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 141
+        width: 60
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33092014cd2c44990a8fd182811bcbbd
+      internalID: 2603627000201258742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_11
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 141
+        width: 62
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81865fb3fbfea4d6e8daa092ce38b641
+      internalID: 8140931318037241699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_12
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 141
+        width: 59
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c4954dd8d464fa9aec0c5dd5e105fc
+      internalID: 8288743055709707637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_13
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 139
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a08592f4ad2f4a459d49bceb81d0d7b
+      internalID: -4042381751056654977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_14
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 136
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89283375047ee40af9cdc3f32bb97c44
+      internalID: -6920265732120264634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 82
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0919ada4b464f458c6e09933ea9578
+      internalID: -1360454821487283098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_16
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 81
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5803d1758594ce6966f24587aa61e2
+      internalID: -7659690407259244544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_17
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 80
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb537b4cac8e44312b2d69ac04f48057
+      internalID: -885869522274413845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_18
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 79
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df36cacffd254f0b98fee6b9861cdfb
+      internalID: 7547901279054375352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_19
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 79
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e1384263edc4e4182bbadf0fb33039
+      internalID: -5500235441701301141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_20
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 89
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b442a1c1c92449f2a9bccb904776c37
+      internalID: 194756855908230386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_21
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 89
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96baee47dd8fe481ab27901c0b0250b6
+      internalID: -4909435775355876085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_22
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 89
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2497f50d4715d4851ba1b7438000a078
+      internalID: 441466258272664697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_23
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 88
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7270dd67cb447e8b3d7bf7aa38116a
+      internalID: 6157533070244746044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_24
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 91
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1572c227833544645af5ae3677be5c9c
+      internalID: -7188834056107468121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_25
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 91
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f589af56ce7bb4144a14dc6d5fb16d47
+      internalID: -6620683415045169986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_26
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 10
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71fbc066e7c542e4a0468347830b101
+      internalID: -4910089742301816719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_27
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 8
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09967549822e64cc8adb394792891153
+      internalID: -3788571667159948353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_28
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 6
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5820a64251e547e8833ea9caae6789c
+      internalID: 7878639252364173178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_29
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 5
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0bb890b3c844bc5b9788ad62734f95
+      internalID: -7584717053219433458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_30
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 5
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36e177de1295496eb66abb958a3de88
+      internalID: -8774133927633289340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_31
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 4
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca75618be5134f65a3fed4f4b359b97
+      internalID: 8503288454792670420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_32
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 3
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b77571f804d4bb0a6e3ee1614d5e22
+      internalID: 4512915746691634376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_33
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5612dcf720e154fce835204de4d83ad3
+      internalID: 8661395720923536455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_34
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 0
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4440805c117084d209debd81a431a5b3
+      internalID: 3326199419068631402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mmm-mmxwalkingball_35
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 0
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d07588573e6b48f88b023b34999c54d
+      internalID: -2089839706169004938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1db10cef281854d04832df09d848f9b9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
