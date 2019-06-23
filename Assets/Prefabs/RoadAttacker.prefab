@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Megaman: {fileID: 0}
   reloadTime: 3
-  m_speed: 1.666
+  m_speed: 1.8
   Max_Health: 11
   turnLeft: 0
   turnRight: 0
