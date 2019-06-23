@@ -9,6 +9,9 @@ TagManager:
   - ChargedBeam
   - spin
   - Crusher
+  - CrusherSon
+  - Block
+  - ScreenShake
   layers:
   - Default
   - TransparentFX
