@@ -131,6 +131,14 @@ partial class Megaman : Boid
   /// </summary>
   private Animator m_animator;
 
+  /// <summary>
+  ///  Audio source
+  /// </summary>
+  private AudioSource m_audioSource;
+  public AudioSource SourceAudi { get { return m_audioSource; } }
+
+
+
   private float m_directionX;
   public float DirectionX
   {
@@ -168,6 +176,16 @@ partial class Megaman : Boid
   public float airTime = 0;
   public bool addDmg = false;
 
+  /// <summary>
+  /// Here is where audio goes
+  /// We should avoid get stuff like that but now it's too late :C
+  /// </summary>
+  public AudioClip m_fShoot;
+  public AudioClip m_sShoot;
+  public AudioClip m_audioJump;
+  public AudioClip m_audioDamage;
+  public AudioClip m_audioCharge;
+  public AudioClip m_audioDeath;
 
 
   private void Awake()
@@ -181,6 +199,9 @@ partial class Megaman : Boid
     m_indexBullet = -1;
     m_attkAnimTime = 0.0f;
     m_invulnerabilityTime = 100.0f;
+    
+    //Sound
+    m_audioSource = GetComponent<AudioSource>();
 
     //Instantiate shit, I'm getting sick of this
     m_bullets.Add(GameObject.Find("Bullet").GetComponent<Bullet>());
@@ -209,7 +230,7 @@ partial class Megaman : Boid
     //Debug editor button to add damage
     if(addDmg)
     {
-      addDamage(1);
+      addDamage(16);
     }
 
     //Deal with invulnerability frames. I didn't do it well but that was the "fastest" thoughts
@@ -296,14 +317,17 @@ partial class Megaman : Boid
 
     if (time >= 0.0f && time < 1.0f)
     {
+      m_audioSource.PlayOneShot(m_sShoot, 0.5f);
       m_bullets[m_indexBullet].beeingShot(transform.position, dir);
     }
     else if(time > 1.0f && time < 2.5f)
     {
+      m_audioSource.PlayOneShot(m_fShoot, 0.3f);
       m_greenBullet.beeingShot(transform.position, dir);
     }
     else if(time > 2.5)
     {
+      m_audioSource.PlayOneShot(m_fShoot, 0.5f);
       m_blueBullet.beeingShot(transform.position, dir);
     }
   }
@@ -369,11 +393,24 @@ partial class Megaman : Boid
   {
     if (m_canRecieveDmg)
     {
-      m_animator.SetTrigger("Dmg");
       m_health -= dmg;
+      VelocityX = 0;
       m_canMove = false;
       m_canRecieveDmg = false;
+      if(m_health <= 0)
+      {
+        dead();
+        return;
+      }
+      m_animator.SetTrigger("Dmg");
+      m_audioSource.PlayOneShot(m_audioDamage, 2);
     }
+  }
+
+  private void dead()
+  {//TODO: deal dead
+    Debug.Log("M0ristes buey");
+    m_audioSource.PlayOneShot(m_audioDeath, 0.5f);
   }
 
   private void triggerAttckAnim()

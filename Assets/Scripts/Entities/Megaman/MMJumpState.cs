@@ -19,6 +19,7 @@ class MMJumpState : State<Megaman>
     entity.setAnim(ANIM_STATE.JUMP);
     m_timeJumping = 0.4f;
     m_startPos = entity.Position;
+    entity.SourceAudi.PlayOneShot(entity.m_audioJump, 8.0f);
   }
 
   public override void OnStateExit(Megaman entity)
