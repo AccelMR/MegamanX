@@ -10,6 +10,7 @@ public class GunVoltSpawner : Spawner
   {
     position = transform.position;
     enemy = Instantiate(enemy.gameObject);
+    enemy.transform.position = position;
     MaxHealth = enemy.GetComponent<Enemy>().MaxHealth;
     canRespawn = false;
   }

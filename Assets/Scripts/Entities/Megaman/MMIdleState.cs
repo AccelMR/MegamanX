@@ -35,6 +35,10 @@ class MMIdleState : State<Megaman>
     {
       entity.TimeBtnPressed += Time.fixedDeltaTime;
     }
+    else if (!Input.GetButtonDown("Jump") && !entity.IsGrounded)
+    {
+      m_pStateMachine.ToState(entity.fallState, entity);
+    }
 
     if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.98f)
     {

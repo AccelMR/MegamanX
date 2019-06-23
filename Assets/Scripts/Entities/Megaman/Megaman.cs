@@ -237,12 +237,13 @@ partial class Megaman : Boid
     if(collision.collider.CompareTag("TriggerLimit")) { return; }
 
     var v = collision.contacts[0].normal;
+    Debug.Log(v);
     if (collision.transform.tag == "Bullet") return;
     if (v == Vector2.right || v == Vector2.left )
     {
       m_isWalled = true;
     }
-    if(v == Vector2.up)
+    if (v == Vector2.up) 
     {
       m_isGround = true;
     }
