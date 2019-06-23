@@ -191,6 +191,7 @@ MonoBehaviour:
   m_maxJump: 0.3
   m_isGround: 0
   m_isWalled: 0
+  m_inclined: 0
   m_timeShootBtnPressed: 0
   m_bullets: []
   m_greenBullet: {fileID: 0}
