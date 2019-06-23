@@ -322,12 +322,12 @@ partial class Megaman : Boid
     }
     else if(time > 1.0f && time < 2.5f)
     {
-      m_audioSource.PlayOneShot(m_fShoot, 0.3f);
+      m_audioSource.PlayOneShot(m_fShoot, 0.5f);
       m_greenBullet.beeingShot(transform.position, dir);
     }
     else if(time > 2.5)
     {
-      m_audioSource.PlayOneShot(m_fShoot, 0.5f);
+      m_audioSource.PlayOneShot(m_fShoot, 0.85f);
       m_blueBullet.beeingShot(transform.position, dir);
     }
   }
