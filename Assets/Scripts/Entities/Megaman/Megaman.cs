@@ -121,6 +121,8 @@ partial class Megaman : Boid
   private bool m_isWalled;
   public bool IsWalled { get { return m_isWalled; } }
 
+  public bool m_inclined = false;
+
   private LayerMask m_floor;
   private LayerMask m_wall;
 
@@ -167,6 +169,7 @@ partial class Megaman : Boid
   public bool addDmg = false;
 
 
+
   private void Awake()
   {
     m_collider = GetComponent<CapsuleCollider2D>();
@@ -210,7 +213,7 @@ partial class Megaman : Boid
     }
 
     //Deal with invulnerability frames. I didn't do it well but that was the "fastest" thoughts
-    //if you know a better wat go ahead and fix it up :C
+    //if you know a better way go ahead and fix it up :C
     if(m_invulnerabilityTime >= 0.0f && m_invulnerabilityTime < 10.0f)
     {
       Esprait.enabled = !Esprait.enabled;
@@ -287,12 +290,12 @@ partial class Megaman : Boid
       dir = m_directionX;
     }
 
+    triggerAttckAnim();
     m_indexBullet++;
     if (m_indexBullet > 2) m_indexBullet = 0;
 
     if (time >= 0.0f && time < 1.0f)
     {
-      m_animator.SetTrigger("attack");
       m_bullets[m_indexBullet].beeingShot(transform.position, dir);
     }
     else if(time > 1.0f && time < 2.5f)
@@ -315,14 +318,19 @@ partial class Megaman : Boid
     //Don't use this tag on anything, just for camera stuff
     if(collision.collider.CompareTag("TriggerLimit")) { return; }
 
+
     var v = collision.contacts[0].normal;
+    float a = Vector2.Angle(v, Vector2.right);
+
+    Debug.Log(a);
     if (collision.transform.tag == "Bullet") return;
     if (v == Vector2.right || v == Vector2.left )
     {
       m_isWalled = true;
     }
-    if(v == Vector2.up)
+    if(a > 45 && a < 135)
     {
+      m_inclined = ((a > 45 && a < 90) || (a > 90 && a < 135)) ? true : false;
       m_isGround = true;
     }
   }
@@ -363,6 +371,26 @@ partial class Megaman : Boid
       m_health -= dmg;
       m_canMove = false;
       m_canRecieveDmg = false;
+    }
+  }
+
+  private void triggerAttckAnim()
+  {
+    if(m_stateMachine.IsCurrentState(idleState))
+    {
+      m_animator.SetTrigger("attack");
+    }
+    else if(m_stateMachine.IsCurrentState(moveState))
+    {
+      m_animator.SetTrigger("movAttck");
+    }
+    else if(m_stateMachine.IsCurrentState(jumpState) || m_stateMachine.IsCurrentState(fallState))
+    {
+      m_animator.SetTrigger("airAttck");
+    }
+    else if(m_stateMachine.IsCurrentState(wallSlide))
+    {
+      m_animator.SetTrigger("slideAttck");
     }
   }
 
