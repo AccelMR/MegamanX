@@ -57,6 +57,16 @@ class MMMoveState : State<Megaman>
 
     entity.VelocityX = dir * entity.Speed;
 
+    if(entity.IsWalled)
+    {
+      entity.setAnim(ANIM_STATE.IDLE);
+    }
+    else
+    {
+      entity.setAnim(ANIM_STATE.MOVE);
+    }
+
+
     if (dir == 0.0f)
     {
       m_pStateMachine.ToState(entity.idleState, entity);

@@ -324,14 +324,16 @@ partial class Megaman : Boid
 
     Debug.Log(a);
     if (collision.transform.tag == "Bullet") return;
-    if (v == Vector2.right || v == Vector2.left )
-    {
-      m_isWalled = true;
-    }
     if(a > 45 && a < 135)
     {
+      Debug.Log("Grounded set");
       m_inclined = ((a > 45 && a < 90) || (a > 90 && a < 135)) ? true : false;
       m_isGround = true;
+    }
+    if (v == Vector2.right || v == Vector2.left )
+    {
+      Debug.Log("Walled set");
+      m_isWalled = true;
     }
   }
 

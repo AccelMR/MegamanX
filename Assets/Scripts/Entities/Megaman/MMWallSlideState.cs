@@ -16,7 +16,7 @@ class MMWallSlideState : State<Megaman>
   {
     var dirX = Input.GetAxisRaw("Horizontal");
     entity.DirectionX = dirX;
-    entity.VelocityX = dirX * entity.Speed;
+    entity.VelocityX = dirX * 0.5f;
 
     if (Input.GetButtonDown("Shoot"))
     {
