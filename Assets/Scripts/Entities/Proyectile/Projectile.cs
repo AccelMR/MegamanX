@@ -35,4 +35,10 @@ public class Projectile : MonoBehaviour
     transform.position = position;
 
   }
+
+    public float Speed
+    {
+        get { return speed; }
+        set { speed = value; }
+    }
 }

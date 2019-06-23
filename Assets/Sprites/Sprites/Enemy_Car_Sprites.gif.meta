@@ -35,6 +35,9 @@ TextureImporter:
   - first:
       213: -7908213144006471987
     second: Enemy_Car_Sprites_10
+  - first:
+      213: -6931572733276831718
+    second: Enemy_Car_Sprites_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -117,105 +120,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy_Car_Sprites_0
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 37
-        width: 68
-        height: 36
-      alignment: 9
-      pivot: {x: 0.33080533, y: 0.43230787}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 18}
-        - {x: -34, y: -18}
-        - {x: 34, y: -18}
-        - {x: 31, y: -16}
-        - {x: 31, y: -14}
-        - {x: 30, y: -14}
-        - {x: 30, y: -13}
-        - {x: 29, y: -13}
-        - {x: 29, y: -10}
-        - {x: 31, y: -10}
-        - {x: 31, y: -9}
-        - {x: 33, y: -8}
-        - {x: 34, y: -8}
-        - {x: 34, y: -7}
-        - {x: 33, y: -7}
-        - {x: 33, y: -6}
-        - {x: 31, y: -6}
-        - {x: 31, y: -5}
-        - {x: 29, y: -5}
-        - {x: 29, y: -4}
-        - {x: 28, y: -4}
-        - {x: 28, y: -3}
-        - {x: 27, y: -3}
-        - {x: 27, y: -2}
-        - {x: 26, y: -2}
-        - {x: 26, y: -1}
-        - {x: 24, y: -1}
-        - {x: 24, y: 0}
-        - {x: 22, y: 0}
-        - {x: 22, y: 2}
-        - {x: 23, y: 2}
-        - {x: 24, y: 3}
-        - {x: 25, y: 4}
-        - {x: 25, y: 8}
-        - {x: 24, y: 9}
-        - {x: 23, y: 10}
-        - {x: 22, y: 11}
-        - {x: 19, y: 18}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7cdb39146f2c7f42973561567aa2ab3
-      internalID: 5158403151333519207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Car_Sprites_1
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 37
-        width: 78
-        height: 36
-      alignment: 9
-      pivot: {x: 0.416633, y: 0.42546102}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -39, y: 18}
-        - {x: -39, y: 1}
-        - {x: -38, y: 1}
-        - {x: -38, y: 0}
-        - {x: -39, y: 0}
-        - {x: -39, y: -1}
-        - {x: -38, y: -1}
-        - {x: -38, y: -2}
-        - {x: -35, y: -2}
-        - {x: -24, y: -18}
-        - {x: 39, y: -18}
-        - {x: 39, y: 18}
-      - - {x: -35, y: -3}
-        - {x: -33, y: -4}
-        - {x: -39, y: -18}
-        - {x: -25, y: -13}
-        - {x: -26, y: -7}
-        - {x: -30, y: -4}
-        - {x: -33, y: -3}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf188835958df444cbbeb1a35c026db6
-      internalID: -8110910774503659401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Enemy_Car_Sprites_2
       rect:
         serializedVersion: 2
@@ -224,7 +128,7 @@ TextureImporter:
         width: 78
         height: 36
       alignment: 9
-      pivot: {x: 0.4165577, y: 0.43194708}
+      pivot: {x: 0.4815838, y: 0.5092084}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,212 +136,6 @@ TextureImporter:
       bones: []
       spriteID: 676125a9ffbf9044c90b8460ca703f52
       internalID: 644190424665401785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Car_Sprites_3
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 37
-        width: 68
-        height: 36
-      alignment: 9
-      pivot: {x: 0.33029488, y: 0.42777792}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23, y: 18}
-        - {x: -33, y: 7}
-        - {x: -33, y: 5}
-        - {x: -34, y: 5}
-        - {x: -34, y: 0}
-        - {x: -33, y: 0}
-        - {x: -33, y: -2}
-        - {x: -32, y: -2}
-        - {x: -32, y: -6}
-        - {x: -31, y: -6}
-        - {x: -31, y: -7}
-        - {x: -30, y: -7}
-        - {x: -30, y: -13}
-        - {x: -32, y: -18}
-        - {x: 34, y: -18}
-        - {x: 34, y: -8}
-        - {x: 34, y: -7}
-        - {x: 33, y: -7}
-        - {x: 33, y: -6}
-        - {x: 25, y: 8}
-        - {x: 24, y: 18}
-      - - {x: 26, y: 11}
-        - {x: 29, y: 11}
-        - {x: 32, y: 11}
-        - {x: 32, y: 14}
-        - {x: 26, y: 14}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73b3d6c5875b0954ea4229b9997fe3a5
-      internalID: -8620498867983270706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Car_Sprites_4
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 37
-        width: 57
-        height: 35
-      alignment: 9
-      pivot: {x: 0.3063167, y: 0.4434288}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -17.5, y: 17.5}
-        - {x: -26.5, y: 7.5}
-        - {x: -26.5, y: 6.5}
-        - {x: -27.5, y: 6.5}
-        - {x: -27.5, y: 4.5}
-        - {x: -28.5, y: 4.5}
-        - {x: -28.5, y: 3.5}
-        - {x: -27.5, y: 3.5}
-        - {x: -27.5, y: 1.5}
-        - {x: -26.5, y: 1.5}
-        - {x: -26.5, y: 0.5}
-        - {x: -25.5, y: 0.5}
-        - {x: -25.5, y: -1.5}
-        - {x: -26.5, y: -1.5}
-        - {x: -26.5, y: -5.5}
-        - {x: -25.5, y: -5.5}
-        - {x: -25.5, y: -11.5}
-        - {x: -24.5, y: -11.5}
-        - {x: -24.5, y: -13.5}
-        - {x: -24.5, y: -17.5}
-        - {x: 28.5, y: -17.5}
-        - {x: 28.5, y: 6.5}
-        - {x: 14.5, y: 17.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 497cb0a87027968479a2a8a68c3beb73
-      internalID: -6142172080215244905
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Car_Sprites_5
-      rect:
-        serializedVersion: 2
-        x: 358
-        y: 37
-        width: 57
-        height: 35
-      alignment: 9
-      pivot: {x: 0.69248295, y: 0.43834448}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce9e3c8df2848c545817b0bb7b1a6eba
-      internalID: 841128208261948606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Car_Sprites_6
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 6
-        width: 66
-        height: 23
-      alignment: 9
-      pivot: {x: 0.36293355, y: 0.49753603}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 470abf7f84742334da55ac08ecba6494
-      internalID: -8566019917255487684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Car_Sprites_7
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 5
-        width: 66
-        height: 21
-      alignment: 9
-      pivot: {x: 0.36363682, y: 0.43428576}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ede830d3ac93244f923ddd9679acbde
-      internalID: 1453479254478958225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Car_Sprites_8
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 5
-        width: 64
-        height: 21
-      alignment: 9
-      pivot: {x: 0.382715, y: 0.49730197}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51ae874cf1a4a9f41bb830d3f0d7ee98
-      internalID: 121392006988385346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy_Car_Sprites_9
-      rect:
-        serializedVersion: 2
-        x: 277
-        y: 5
-        width: 64
-        height: 21
-      alignment: 9
-      pivot: {x: 0.38250017, y: 0.49714288}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -32, y: 10.5}
-        - {x: -32, y: -10.5}
-        - {x: 24, y: -10.5}
-        - {x: 25, y: -7.5}
-        - {x: 25, y: -5.5}
-        - {x: 26, y: -4.5}
-        - {x: 28, y: -2.5}
-        - {x: 30, y: -0.5}
-        - {x: 32, y: 1.5}
-        - {x: 32, y: 10.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5d051fb344076749987b8b275e5a229
-      internalID: -2459525195460576678
       vertices: []
       indices: 
       edges: []
@@ -459,6 +157,216 @@ TextureImporter:
       bones: []
       spriteID: 2e52ae2b3bc81a542aa5f48b7a24527a
       internalID: -7908213144006471987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Car_Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 36
+        width: 64
+        height: 37
+      alignment: 9
+      pivot: {x: 0.4329009, y: 0.50850314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bae5b2d87f62c946b0984b641f27e91
+      internalID: 5158403151333519207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Car_Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 37
+        width: 75
+        height: 37
+      alignment: 9
+      pivot: {x: 0.4681014, y: 0.4940271}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b3712fcbfe83d438b32b6190177564
+      internalID: -8110910774503659401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Car_Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 37
+        width: 78
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5eaa22efe80f1246a221d084b09e53e
+      internalID: -6931572733276831718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Car_Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 37
+        width: 68
+        height: 36
+      alignment: 9
+      pivot: {x: 0.4106266, y: 0.5092084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b36733be9777b844b817a94381900cc
+      internalID: -8620498867983270706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Car_Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 37
+        width: 57
+        height: 35
+      alignment: 9
+      pivot: {x: 0.38248697, y: 0.4618141}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1292fb234e25246b2b61a1bda75d24
+      internalID: -6142172080215244905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Car_Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 37
+        width: 57
+        height: 35
+      alignment: 9
+      pivot: {x: 0.6117773, y: 0.45940727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dfb6e47286a004d8266a4c59fb8f57
+      internalID: 841128208261948606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Car_Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 6
+        width: 66
+        height: 23
+      alignment: 9
+      pivot: {x: 0.4457648, y: 0.8480209}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b90deae607c60240a13036fbbb61fae
+      internalID: -8566019917255487684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Car_Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 5
+        width: 66
+        height: 24
+      alignment: 9
+      pivot: {x: 0.4457648, y: 0.8480209}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0605718fae42c447aef20fbf1f3e056
+      internalID: 1453479254478958225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Car_Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 5
+        width: 64
+        height: 21
+      alignment: 9
+      pivot: {x: 0.4457648, y: 0.8480209}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd25cdd784f48ac458e8ea8ed68cf4e2
+      internalID: 121392006988385346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_Car_Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 5
+        width: 64
+        height: 21
+      alignment: 9
+      pivot: {x: 0.4457648, y: 0.8480209}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e892019be284d408493505c195bd19
+      internalID: -2459525195460576678
       vertices: []
       indices: 
       edges: []
