@@ -41,7 +41,7 @@ public class EyeSpawner : Spawner
         enemy.transform.position = position;
 
         enemy.SetActive(true);
-
+        enemy.GetComponent<Animator>().SetBool("startWalking", true);
 
     }
     public override void KillEnemy()

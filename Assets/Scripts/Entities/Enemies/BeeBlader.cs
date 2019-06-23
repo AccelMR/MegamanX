@@ -33,6 +33,8 @@ public class BeeBlader : Enemy
     // Start is called before the first frame update
     void Start()
     {
+        shot[0] = Instantiate(shot[0], transform.position, transform.rotation);
+        shot[1] = Instantiate(shot[1], transform.position, transform.rotation);
         Pos = new Vector3(-1, 0, 0);
         m_Megaman = GameObject.FindGameObjectWithTag("Player").transform;
         m_animator = GetComponent<Animator>();

@@ -186,10 +186,11 @@ public class RoadAttacker : Enemy
         {
             m_animator.SetBool("PlayerOnCar", true);
             m_Megaman.SetParent(transform);
+            gameObject.tag = "Untagged";
         }
         else
         {
-            //hacer dano aqui
+            gameObject.tag = "Enemy";
         }
     }
 
