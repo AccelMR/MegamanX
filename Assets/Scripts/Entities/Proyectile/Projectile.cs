@@ -40,4 +40,8 @@ public class Projectile : MonoBehaviour
         get { return speed; }
         set { speed = value; }
     }
+  public int Damage
+  {
+    get { return damage; }
+  }
 }

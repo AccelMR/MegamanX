@@ -26,41 +26,40 @@ public class BridgeController : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    if(state == 1)
+    if (state == 1)
     {
       platforms[2].GetComponent<Rigidbody2D>().MovePosition
         (Vector2.Lerp(platforms[2].transform.position, new Vector2(platforms[2].transform.position.x, platforms[2].transform.position.y - 2f), 3.5f * Time.deltaTime));
       GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
       camera.transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
-      camera.transform.localPosition = 
+      camera.transform.localPosition =
         (Vector3.Lerp(camera.transform.localPosition, new Vector3(0, 0, -10), 3.5f * Time.deltaTime));
-      if ((Mathf.Abs(platforms[2].transform.position.y-trigger.transform.position.y)) <= 0.3f)
+      if ((Mathf.Abs(platforms[2].transform.position.y - trigger.transform.position.y)) <= 0.3f)
       {
-        GameObject.FindGameObjectWithTag("MainCamera").transform.parent = null;
-        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camara>().enabled = true;
-        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camara>().seguirY = true;
         state = 2;
-        
+
       }
     }
-    if(state == 2)
+    if (state == 2)
     {
       platforms[2].GetComponent<SpriteRenderer>().sprite = broken[1];
       platforms[0].transform.GetChild(0).gameObject.SetActive(true);
       platforms[1].transform.GetChild(0).gameObject.SetActive(true);
       GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
-      
-      /*camera.transform.localPosition =
-        (Vector3.Lerp(camera.transform.localPosition, new Vector3(0, 0, -10), 3.5f * Time.deltaTime));*/
+      camera.transform.parent = GameObject.FindGameObjectWithTag("Player").transform;
+
+      camera.transform.localPosition =
+        (Vector3.Lerp(camera.transform.localPosition, new Vector3(0, 0, -10), 3.5f * Time.deltaTime));
       state++;
     }
   }
+
   private void OnTriggerEnter2D(Collider2D collision)
   {
     if (collision.tag == "Player")
     {
       GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
-      camera.GetComponent<Camara>().enabled = false;
+      camera.transform.parent = null;
       Vector3 desired = new Vector3(transform.position.x + offset, camera.transform.position.y, camera.transform.position.z);
       camera.transform.position = desired;
     }

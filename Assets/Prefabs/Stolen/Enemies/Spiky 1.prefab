@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4101433812625863349}
   - component: {fileID: 4101433812625863345}
   - component: {fileID: 4101433812625863344}
+  - component: {fileID: 9053986056197617236}
   m_Layer: 12
   m_Name: Spiky 1
   m_TagString: Enemy
@@ -94,7 +95,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -115,6 +116,7 @@ MonoBehaviour:
   m_Megaman: {fileID: 0}
   reloadTime: 0
   m_speed: 1.75
+  damage: 0
   Max_Health: 4
 --- !u!95 &4101433812625863345
 Animator:
@@ -156,3 +158,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &9053986056197617236
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4101433812625863370}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.12474759

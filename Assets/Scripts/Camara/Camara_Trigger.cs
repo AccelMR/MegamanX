@@ -8,16 +8,9 @@ public class Camara_Trigger : MonoBehaviour
 
   void OnTriggerEnter2D(Collider2D colision)
   {
-    if (colision.gameObject.tag == "Cambio1")
+    if (colision.gameObject.tag == "FirstFloor")
     {
-      if (m_camara.seguirY)
-        m_camara.seguirY = false;
-      else
-      {
-        m_camara.seguirY = true;
-        m_camara.enabled = true;
-
-      }
+      m_camara.FollowY();
     }
   }
 }
