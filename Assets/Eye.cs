@@ -15,7 +15,6 @@ public class Eye : Enemy
         Dir = Target.position - transform.position;
         Dir.Normalize();
         m_animator = GetComponent<Animator>();
-        m_animator.SetTrigger("active");
         health = Max_Health;
     }
 
@@ -28,6 +27,16 @@ public class Eye : Enemy
         if (health <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+
+    protected override void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            health -= 1;
+            collision.gameObject.GetComponent<Collider2D>().enabled = false;
+            Debug.Log("Enemy Hit.   New health = " + health);
         }
     }
 }
