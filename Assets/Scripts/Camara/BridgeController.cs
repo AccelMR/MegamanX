@@ -36,6 +36,9 @@ public class BridgeController : MonoBehaviour
         (Vector3.Lerp(camera.transform.localPosition, new Vector3(0, 0, -10), 3.5f * Time.deltaTime));
       if ((Mathf.Abs(platforms[2].transform.position.y-trigger.transform.position.y)) <= 0.3f)
       {
+        GameObject.FindGameObjectWithTag("MainCamera").transform.parent = null;
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camara>().enabled = true;
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camara>().seguirY = true;
         state = 2;
         
       }
@@ -47,8 +50,8 @@ public class BridgeController : MonoBehaviour
       platforms[1].transform.GetChild(0).gameObject.SetActive(true);
       GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
       
-      camera.transform.localPosition =
-        (Vector3.Lerp(camera.transform.localPosition, new Vector3(0, 0, -10), 3.5f * Time.deltaTime));
+      /*camera.transform.localPosition =
+        (Vector3.Lerp(camera.transform.localPosition, new Vector3(0, 0, -10), 3.5f * Time.deltaTime));*/
       state++;
     }
   }
@@ -57,7 +60,7 @@ public class BridgeController : MonoBehaviour
     if (collision.tag == "Player")
     {
       GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
-      camera.transform.parent = null;
+      camera.GetComponent<Camara>().enabled = false;
       Vector3 desired = new Vector3(transform.position.x + offset, camera.transform.position.y, camera.transform.position.z);
       camera.transform.position = desired;
     }
