@@ -13,12 +13,28 @@ using UnityEngine;
     ATTACK,
     MOVE_ATTACK,
     SLIDE,
+    DAMAGE,
     DIE
   }
 
 partial class Megaman : Boid
 {
+  /// <summary>
+  /// Health with getter
+  /// </summary>
+  [SerializeField]
+  private int m_health;
+  public int Health { get { return m_health; } }
 
+  /// <summary>
+  /// if player can be damaged
+  /// </summary>
+  private bool m_canMove;
+
+  /// <summary>
+  /// If Megaman gonna flash after taking damage
+  /// </summary>
+  private bool m_canRecieveDmg;
 
   /// <summary>
   /// how fast mega man will move on horizontal direction
@@ -33,6 +49,10 @@ partial class Megaman : Boid
   [SerializeField]
   private float m_jumpTime;
   public float JumpTime { get { return m_jumpTime; } }
+
+  [SerializeField]
+  private float m_slideVelocity;
+  public float SlideVelocity { get { return m_slideVelocity; } }
 
   /// <summary>
   /// how much mega man will jump
@@ -61,6 +81,35 @@ partial class Megaman : Boid
     set { m_animState = value; }
   }
 
+  private ANIM_STATE m_prevState;
+
+  /// <summary>
+  /// How much time can't move after getting a hit
+  /// </summary>
+  private float m_attkAnimTime;
+
+  /// <summary>
+  /// How much time is going to be invulnerable
+  /// </summary>
+  private float m_invulnerabilityTime;
+
+  /// <summary>
+  /// Current sprite
+  /// </summary>
+  private SpriteRenderer m_sprite;
+  public SpriteRenderer Esprait
+  {
+    get
+    {
+      if(m_sprite == null)
+      {
+        m_sprite = GetComponentInChildren<SpriteRenderer>();
+      }
+      return m_sprite;
+
+    }
+  }
+
   /// <summary>
   /// temporal
   /// </summary>
@@ -71,6 +120,8 @@ partial class Megaman : Boid
   [SerializeField]
   private bool m_isWalled;
   public bool IsWalled { get { return m_isWalled; } }
+
+  public bool m_inclined = false;
 
   private LayerMask m_floor;
   private LayerMask m_wall;
@@ -115,9 +166,14 @@ partial class Megaman : Boid
   /// Debug stuff
   /// </summary>
   public float airTime = 0;
+  public bool addDmg = false;
 
+    public AudioClip First_Shot;
+    public AudioClip Second_Shot;
+    public AudioClip Third_Shot;
+    public AudioClip Jump_Sound;
 
-  private void Awake()
+    private void Awake()
   {
     m_collider = GetComponent<CapsuleCollider2D>();
     m_floor = LayerMask.GetMask("Level");
@@ -126,40 +182,94 @@ partial class Megaman : Boid
     m_timeShootBtnPressed = 0;
     m_directionX = 1.0f;
     m_indexBullet = -1;
+    m_attkAnimTime = 0.0f;
+    m_invulnerabilityTime = 100.0f;
+
+    //Instantiate shit, I'm getting sick of this
+    m_bullets.Add(GameObject.Find("Bullet").GetComponent<Bullet>());
+    m_bullets.Add(GameObject.Find("Bullet (1)").GetComponent<Bullet>());
+    m_bullets.Add(GameObject.Find("Bullet (2)").GetComponent<Bullet>());
+    m_greenBullet = GameObject.Find("GreenBullet").GetComponent<Bullet>();
+    m_blueBullet = GameObject.Find("BlueBullet").GetComponent<Bullet>();
+
+    //Stuff for damage
+    m_canMove = true;
+    m_canRecieveDmg = true;
 
     //Initialize State Machine
     InitStateMachine();
-  }
+        
+    }
 
   public void Update()
   {
+    //Just a recheck if shoot ain't pressed, if not it'll call shoot
     if(!Input.GetButton("Shoot") )
     {
       if (TimeBtnPressed > 0.9f) shoot(TimeBtnPressed);
       TimeBtnPressed = 0.0f;
     }
+
+    //Debug editor button to add damage
+    if(addDmg)
+    {
+      addDamage(1);
+    }
+
+    //Deal with invulnerability frames. I didn't do it well but that was the "fastest" thoughts
+    //if you know a better way go ahead and fix it up :C
+    if(m_invulnerabilityTime >= 0.0f && m_invulnerabilityTime < 10.0f)
+    {
+      Esprait.enabled = !Esprait.enabled;
+      m_invulnerabilityTime -= Time.deltaTime;
+    }
+    else if(m_invulnerabilityTime < 0.0f)
+    {
+      m_canRecieveDmg = true;
+      Esprait.enabled = true;
+      m_invulnerabilityTime = 100.0f;
+    }
+
   }
 
   public void FixedUpdate()
   {
-    updateGrounded();
+    //Here basically takes time until Megaman can move
+    if (m_attkAnimTime >= 1.43f)
+    {
+      m_attkAnimTime = 0.0f;
+      m_canMove = true;
+      m_invulnerabilityTime = 1.0f;
+    }
 
-    m_stateMachine.OnState(this);
+    //If he can move then will call its state. 
+    //NOTE: almost sure that it shouldn't be done like that
+    if (m_canMove)
+    { 
+      m_stateMachine.OnState(this);
+    }
+    else
+    {
+      m_attkAnimTime += Time.fixedDeltaTime;
+      transform.position += new Vector3(-DirectionX * Time.fixedDeltaTime *.2f, 0.0f, 0.0f);
+    }
 
+    //Boid move function
     Move();
   }
 
-  private void updateGrounded()
-  {
-    m_isGround = m_collider.IsTouchingLayers(m_floor);
-    m_isWalled = m_collider.IsTouchingLayers(m_wall);
-  }
-
+  /// <summary>
+  /// Change Megaman animation
+  /// </summary>
+  /// <param name="state">enum of state where it'll change</param>
   public void setAnim(ANIM_STATE state)
   {
     m_animator.SetInteger("State_enum", (int)state);
   }
 
+  /// <summary>
+  /// Flips sprites
+  /// </summary>
   private void TurnSprite()
   {
     var scale = transform.GetChild(0).localScale;
@@ -168,23 +278,139 @@ partial class Megaman : Boid
     transform.GetChild(0).localScale = scale;
   }
 
-  public void shoot(float time)
+  /// <summary>
+  /// Shoot function
+  /// </summary>
+  /// <param name="time">how much time shoot button have been pressed</param>
+  /// <param name="dir">direction of where bullet will go, if you don't send
+  /// anything then direction will be same as Megaman direction</param>
+  /// 
+  /// Bug:when it's coming from Wall slide state sometimes it shoots to the opposite direction. 
+  /// It is because it takes the shoot from Update and not from state
+  public void shoot(float time, float dir = 0.0f)
   {
+        
+    AudioSource audio;
+    
+    if(dir == 0.0f)
+    {
+      dir = m_directionX;
+    }
+
+    triggerAttckAnim();
     m_indexBullet++;
     if (m_indexBullet > 2) m_indexBullet = 0;
 
     if (time >= 0.0f && time < 1.0f)
     {
-      m_bullets[m_indexBullet].beeingShot(transform.position, m_directionX);
-    }
+      
+      m_bullets[m_indexBullet].beeingShot(transform.position, dir);
+            audio = GetComponent<AudioSource>();
+            audio.PlayOneShot(First_Shot,1f);
+            Debug.Log("Disparo");
+        }
     else if(time > 1.0f && time < 2.5f)
     {
-      m_greenBullet.beeingShot(transform.position, m_directionX);
-
-    }
+      m_greenBullet.beeingShot(transform.position, dir);
+            audio = GetComponent<AudioSource>();
+            audio.PlayOneShot(Second_Shot, 1f);
+        }
     else if(time > 2.5)
     {
-      m_blueBullet.beeingShot(transform.position, m_directionX);
+      m_blueBullet.beeingShot(transform.position, dir);
+            audio = GetComponent<AudioSource>();
+            audio.PlayOneShot(Third_Shot, 1f);
+    }
+  }
+
+  /// <summary>
+  /// On collision enter
+  /// </summary>
+  /// <param name="collision">collider</param>
+  /// NOTE: depending on the projection vector is which flag is active
+  private void OnCollisionEnter2D(Collision2D collision)
+  {
+    //Don't use this tag on anything, just for camera stuff
+    if(collision.collider.CompareTag("TriggerLimit")) { return; }
+
+
+    var v = collision.contacts[0].normal;
+    float a = Vector2.Angle(v, Vector2.right);
+
+    Debug.Log(a);
+    if (collision.transform.tag == "Bullet") return;
+    if (v == Vector2.right || v == Vector2.left )
+    {
+      m_isWalled = true;
+    }
+    if(a > 45 && a < 135)
+    {
+      m_inclined = ((a > 45 && a < 90) || (a > 90 && a < 135)) ? true : false;
+      m_isGround = true;
+    }
+  }
+
+  /// <summary>
+  /// Collision Exit
+  /// </summary>
+  /// <param name="collision"></param>
+  /// NOTE: this function is bullshit, gotta fix it up TODO:
+  private void OnCollisionExit2D(Collision2D collision)
+  {
+        
+    if (collision.transform.tag == "Bullet") return;
+    if (m_isWalled && m_isGround)
+    {
+      AudioSource audio;
+      if (Input.GetButton("Jump"))
+      {
+                
+        m_isGround = false;
+                audio = GetComponent<AudioSource>();
+                audio.PlayOneShot(Jump_Sound, 1f);
+      }
+      else
+      {
+        m_isWalled = false;
+      }
+    }
+    else if (m_isWalled) m_isWalled = false;
+    else if (m_isGround) m_isGround = false;
+  }
+
+
+  /// <summary>
+  /// add damage to Megaman
+  /// </summary>
+  /// <param name="dmg">how much health it'll take of Megaman</param>
+  public void addDamage(int dmg)
+  {
+    if (m_canRecieveDmg)
+    {
+      m_animator.SetTrigger("Dmg");
+      m_health -= dmg;
+      m_canMove = false;
+      m_canRecieveDmg = false;
+    }
+  }
+
+  private void triggerAttckAnim()
+  {
+    if(m_stateMachine.IsCurrentState(idleState))
+    {
+      m_animator.SetTrigger("attack");
+    }
+    else if(m_stateMachine.IsCurrentState(moveState))
+    {
+      m_animator.SetTrigger("movAttck");
+    }
+    else if(m_stateMachine.IsCurrentState(jumpState) || m_stateMachine.IsCurrentState(fallState))
+    {
+      m_animator.SetTrigger("airAttck");
+    }
+    else if(m_stateMachine.IsCurrentState(wallSlide))
+    {
+      m_animator.SetTrigger("slideAttck");
     }
   }
 
