@@ -28,7 +28,6 @@ class MMIdleState : State<Megaman>
     }
     else if (Input.GetButtonDown("Shoot"))
     {
-      entity.setAnim(ANIM_STATE.ATTACK);
       entity.shoot(0.0f);
     }
     else if (Input.GetButton("Shoot"))
@@ -42,7 +41,6 @@ class MMIdleState : State<Megaman>
 
     if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.98f)
     {
-      entity.setAnim(ANIM_STATE.ATTACK);
       entity.shoot(entity.TimeBtnPressed);
       entity.TimeBtnPressed = 0.0f;
     }
@@ -63,7 +61,6 @@ class MMIdleState : State<Megaman>
     }
     else if(Input.GetButtonDown("Shoot"))
     {
-      entity.setAnim(ANIM_STATE.ATTACK);
       entity.shoot(0.0f);
     }
     else if(Input.GetButton("Shoot"))
@@ -73,7 +70,6 @@ class MMIdleState : State<Megaman>
 
     if (Input.GetButtonUp("Shoot") && entity.TimeBtnPressed > 0.98f)
     {
-      entity.setAnim(ANIM_STATE.ATTACK);
       entity.shoot(entity.TimeBtnPressed);
       entity.TimeBtnPressed = 0.0f;
     }

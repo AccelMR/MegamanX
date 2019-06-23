@@ -16,7 +16,8 @@ class MMFallState : State<Megaman>
   {
     m_timeFalling = 0.0f;
 
-    entity.setAnim(ANIM_STATE.FALL);
+    if (!entity.m_inclined)
+      entity.setAnim(ANIM_STATE.FALL);
   }
 
   public override void OnStatePreUpdate(Megaman entity)
@@ -98,7 +99,7 @@ class MMFallState : State<Megaman>
 
   public override void OnStateExit(Megaman entity)
   {
-    Debug.Log(entity.airTime);
+    //Debug.Log(entity.airTime);
 
     entity.airTime = 0;
   }

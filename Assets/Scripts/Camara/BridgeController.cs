@@ -49,6 +49,7 @@ public class BridgeController : MonoBehaviour
       
       camera.transform.localPosition =
         (Vector3.Lerp(camera.transform.localPosition, new Vector3(0, 0, -10), 3.5f * Time.deltaTime));
+      state++;
     }
   }
   private void OnTriggerEnter2D(Collider2D collision)
