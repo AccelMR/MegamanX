@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
   enum ANIM_STATE
@@ -166,7 +167,7 @@ partial class Megaman : Boid
   private Bullet m_greenBullet;
   [SerializeField]
   private Bullet m_blueBullet;
-
+  private List<Bullet> LBullets;
 
   private int m_indexBullet;
 
@@ -209,6 +210,13 @@ partial class Megaman : Boid
     m_bullets.Add(GameObject.Find("Bullet (2)").GetComponent<Bullet>());
     m_greenBullet = GameObject.Find("GreenBullet").GetComponent<Bullet>();
     m_blueBullet = GameObject.Find("BlueBullet").GetComponent<Bullet>();
+
+
+    m_bullets[0].transform.parent = null;
+    m_bullets[1].transform.parent = null;
+    m_bullets[2].transform.parent = null;
+    m_greenBullet.transform.parent = null;    
+    m_blueBullet.transform.parent = null;
 
     //Stuff for damage
     m_canMove = true;
@@ -449,4 +457,10 @@ partial class Megaman : Boid
     }
   }
 
+
+  public void reset()
+  {
+    m_health = 16;
+    transform.position = new Vector3(1.555f, 1.061f, -562.9807f);
+  }
 }

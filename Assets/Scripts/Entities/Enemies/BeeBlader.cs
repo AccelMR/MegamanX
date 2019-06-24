@@ -44,75 +44,81 @@ public class BeeBlader : Enemy
     // Update is called once per frame
     void Update()
     {
-        if (health > 0)
+    if (Vector2.Distance(transform.position, m_Megaman.position) < 5)
+    {
+      if (health > 0)
+      {
+        ShootTimer();
+        if (move)
         {
-            ShootTimer();
-            if (move)
-            {
-                timeCounter += Time.deltaTime;
-                transform.position += new Vector3(1, 0, 0) * Pos.x * m_speed * Time.deltaTime;
-                if (timeCounter >= step)
-                {
-                    move = false;
-                    timeCounter = 0;
-                }
-            }
-
-            if (goUp)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, new Vector3(transform.position.x, upPosition), Time.deltaTime * 0.3f);
-                if (transform.position.y >= upPosition)
-                {
-                    goUp = false;
-                }
-            }
-            else
-            {
-                transform.position = Vector2.MoveTowards(transform.position, new Vector3(transform.position.x, downPosition), Time.deltaTime * 0.3f);
-                if (transform.position.y <= downPosition)
-                {
-                    goUp = true;
-                }
-            }
-
-            shotTimeCounter += Time.deltaTime;
-            if (shotTimeCounter >= shotSwitchTime)
-            {
-                actions = Random.Range(0, 3);
-                if (actions == 0)
-                {
-                    shotType = 0;
-                }
-                else if (actions == 1)
-                {
-                    shotType = 1;
-                }
-                else if (actions == 2)
-                {
-                    Instantiate(ojoPrefab, transform.position, transform.rotation);
-                }
-                shotTimeCounter = 0;
-            }
-
-            if (shotMissile)
-            {
-                startCurveCounter += Time.deltaTime;
-            }
-            if (startCurveCounter >= startCurve)
-            {
-                Debug.Log("curvear");
-            }
-            if (startCurveCounter >= endCurve)
-            {
-                startCurveCounter = 0;
-                shotMissile = false;
-            }
+          timeCounter += Time.deltaTime;
+          transform.position += new Vector3(1, 0, 0) * Pos.x * m_speed * Time.deltaTime;
+          if (timeCounter >= step)
+          {
+            move = false;
+            timeCounter = 0;
+          }
         }
+
+        if (goUp)
+        {
+          transform.position = Vector2.MoveTowards(transform.position, new Vector3(transform.position.x, upPosition), Time.deltaTime * 0.3f);
+          if (transform.position.y >= upPosition)
+          {
+            goUp = false;
+          }
+        }
+        else
+        {
+          transform.position = Vector2.MoveTowards(transform.position, new Vector3(transform.position.x, downPosition), Time.deltaTime * 0.3f);
+          if (transform.position.y <= downPosition)
+          {
+            goUp = true;
+          }
+        }
+
+        shotTimeCounter += Time.deltaTime;
+        if (shotTimeCounter >= shotSwitchTime)
+        {
+          actions = Random.Range(0, 3);
+          if (actions == 0)
+          {
+            shotType = 0;
+          }
+          else if (actions == 1)
+          {
+            shotType = 1;
+          }
+          else if (actions == 2)
+          {
+            Instantiate(ojoPrefab, transform.position, transform.rotation);
+          }
+          shotTimeCounter = 0;
+        }
+
+        if (shotMissile)
+        {
+          startCurveCounter += Time.deltaTime;
+        }
+        if (startCurveCounter >= startCurve)
+        {
+          Debug.Log("curvear");
+        }
+        if (startCurveCounter >= endCurve)
+        {
+          startCurveCounter = 0;
+          shotMissile = false;
+        }
+      }
+
+      if (health <= 0)
+      {
+        m_animator.SetBool("dead", true);
+        GetComponent<Collider2D>().isTrigger = false;
+        tag = "Untagged";
+      }
+    }
        
-        if (health <= 0)
-        {
-            m_animator.SetBool("dead", true);
-        }
     }
 
     public override void ShootTimer()

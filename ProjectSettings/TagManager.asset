@@ -13,6 +13,8 @@ TagManager:
   - Cambio2
   - FirstFloor
   - Projectile
+  - Bullet1
+  - Bullet2
   layers:
   - Default
   - TransparentFX

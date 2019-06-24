@@ -32,14 +32,14 @@ public class SceneFlow : MonoBehaviour
         }
         if (currentSceneName == "Intro1")
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetButtonDown("Shoot"))
             {
                 StartCoroutine(ChangeScene("Intro2"));
             }
         }
         if (currentSceneName == "Intro2")
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetButtonDown("Shoot"))
             {
                 StartCoroutine(ChangeScene("MenuScene"));
             }

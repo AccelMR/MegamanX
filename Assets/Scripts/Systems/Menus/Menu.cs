@@ -14,6 +14,8 @@ public class Menu : MonoBehaviour
     public Font fontBlue;
     public Font fontOrange;
 
+  public bool pressed;
+
     public Text[] menuTexts = new Text[3];
 
     int menuIndex = 0;
@@ -42,7 +44,7 @@ public class Menu : MonoBehaviour
 
     void Menus()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow)) //Aqui reemplazar por el nuevo input
+        if (Input.GetAxisRaw("Vertical") == -1) //Aqui reemplazar por el nuevo input
         {
             menuTexts[menuIndex].font = fontBlue;
             menuIndex++;
@@ -53,7 +55,7 @@ public class Menu : MonoBehaviour
             MegamanPuntero.transform.localPosition = positions[menuIndex];
             menuTexts[menuIndex].font = fontOrange;
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow)) //Aqui reemplazar por el nuevo input
+        if (Input.GetAxisRaw("Vertical") == 1) //Aqui reemplazar por el nuevo input
         {
             menuTexts[menuIndex].font = fontBlue;
             menuIndex--;
@@ -65,7 +67,7 @@ public class Menu : MonoBehaviour
             MegamanPuntero.transform.localPosition = positions[menuIndex];
         }
 
-        if (Input.GetKeyDown(KeyCode.Return))//aqui poner el input de boton de start
+        if (Input.GetButtonDown("Shoot"))//aqui poner el input de boton de start
         {
             MegamanPuntero.GetComponent<Animator>().SetBool("start", true);
             Blast.GetComponent<Animator>().SetBool("start", true);
@@ -101,4 +103,12 @@ public class Menu : MonoBehaviour
     {
         MegamanPuntero.GetComponent<Animator>().SetBool("start", false);
     }
+
+//   private int getVertical()
+//   {
+//     Input.GetAxisRaw("Vertical")
+// 
+//     return 0;
+//   }
+
 }

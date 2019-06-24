@@ -23,9 +23,6 @@ public class Projectile : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = false;
         gameObject.SetActive(false);
         //Play Animation
-        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1)
-        {
-        }
     }
     public virtual void Activate(Vector3 position)
     {

@@ -30,7 +30,7 @@ public class OptionsMenu : MonoBehaviour
 
     void Menus()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow)) //Aqui reemplazar por el nuevo input
+        if (Input.GetAxisRaw("Vertical") == -1) //Aqui reemplazar por el nuevo input
         {
             OptionsTexts[menuIndex].font = fontBlue;
             menuIndex++;
@@ -40,7 +40,7 @@ public class OptionsMenu : MonoBehaviour
             }
             OptionsTexts[menuIndex].font = fontOrange;
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow)) //Aqui reemplazar por el nuevo input
+        if (Input.GetAxisRaw("Vertical") == 1) //Aqui reemplazar por el nuevo input
         {
             OptionsTexts[menuIndex].font = fontBlue;
             menuIndex--;
@@ -51,7 +51,7 @@ public class OptionsMenu : MonoBehaviour
             OptionsTexts[menuIndex].font = fontOrange;
         }
 
-        if (Input.GetKeyDown(KeyCode.Return))//aqui poner el input de boton de start
+        if (Input.GetButtonDown("Shoot"))//aqui poner el input de boton de start
         {
             switch (menuIndex)
             {

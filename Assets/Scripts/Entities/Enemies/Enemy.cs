@@ -54,7 +54,19 @@ public class Enemy : MonoBehaviour
   {
     if (collision.gameObject.tag == "Bullet")
     {
-      health -= 1;
+      health -= 2;
+      collision.gameObject.GetComponent<Collider2D>().enabled = false;
+      Debug.Log("Enemy Hit.   New health = " + health);
+    }
+    if (collision.gameObject.tag == "Bullet1")
+    {
+      health -= 3;
+      collision.gameObject.GetComponent<Collider2D>().enabled = false;
+      Debug.Log("Enemy Hit.   New health = " + health);
+    }
+    if (collision.gameObject.tag == "Bullet2")
+    {
+      health -= 4;
       collision.gameObject.GetComponent<Collider2D>().enabled = false;
       Debug.Log("Enemy Hit.   New health = " + health);
     }

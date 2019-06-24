@@ -63,7 +63,7 @@ public class PassWordMenu : MonoBehaviour
     {
         if (!Flecha.enabled)
         {
-            if (Input.GetKeyDown(KeyCode.DownArrow)) //Aqui reemplazar por el nuevo input
+            if (Input.GetAxisRaw("Vertical") == -1) //Aqui reemplazar por el nuevo input
             {
                 fila++;
                 DeativateMonito();
@@ -81,7 +81,7 @@ public class PassWordMenu : MonoBehaviour
                     ActivateMonito();
                 }
             }
-            if (Input.GetKeyDown(KeyCode.UpArrow)) //Aqui reemplazar por el nuevo input
+            if (Input.GetAxisRaw("Vertical") == 1) //Aqui reemplazar por el nuevo input
             {
                 fila--;
                 DeativateMonito();
@@ -101,7 +101,7 @@ public class PassWordMenu : MonoBehaviour
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftArrow)) //Aqui reemplazar por el nuevo input
+            if (Input.GetAxisRaw("Horizontal") == -1) //Aqui reemplazar por el nuevo input
             {
                 columna--;
                 DeativateMonito();
@@ -114,7 +114,7 @@ public class PassWordMenu : MonoBehaviour
                 Puntero.transform.localPosition = Positions[menuIndex];
                 ActivateMonito();
             }
-            if (Input.GetKeyDown(KeyCode.RightArrow)) //Aqui reemplazar por el nuevo input
+            if (Input.GetAxisRaw("Horizontal") == 1) //Aqui reemplazar por el nuevo input
             {
                 columna++;
                 DeativateMonito();
@@ -128,7 +128,7 @@ public class PassWordMenu : MonoBehaviour
                 ActivateMonito();
             }
 
-            if (Input.GetKeyDown(KeyCode.S))
+            if (Input.GetButtonDown("Shoot"))
             {
                 NumBlockID[menuIndex]++;
                 if (NumBlockID[menuIndex] >= 8)
@@ -151,11 +151,11 @@ public class PassWordMenu : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.Return))//aqui poner el input de boton de start
+            if (Input.GetButtonDown("Shoot"))//aqui poner el input de boton de start
             {
                 StartCoroutine(sceneFlow.ChangeScene("MenuScene"));
             }
-            else if (Input.GetKeyDown(KeyCode.UpArrow))
+            else if (Input.GetAxisRaw("Vertical") == 1)
             {
                 Flecha.enabled = false;
                 Puntero.enabled = true;
@@ -164,7 +164,7 @@ public class PassWordMenu : MonoBehaviour
                 Puntero.transform.localPosition = Positions[menuIndex];
                 ActivateMonito();
             }
-            else if(Input.GetKeyDown(KeyCode.DownArrow))
+            else if(Input.GetAxisRaw("Vertical") == -1)
             {
                 Flecha.enabled = false;
                 Puntero.enabled = true;

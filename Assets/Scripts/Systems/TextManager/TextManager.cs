@@ -62,8 +62,10 @@ public class TextManager : MonoBehaviour
     bool canChange = false;
 
     bool cantalk = true;
+    bool already = false;
 
-    const int ScenesSize = 2; //Numero de Escenas
+
+    const int ScenesSize = 1; //Numero de Escenas
     Scene[] escenas = new Scene[ScenesSize]; //una escena es un conjunto de dialogos seguidos
     int currentScene = 0;
 
@@ -74,11 +76,7 @@ public class TextManager : MonoBehaviour
 
         //ejemplos de construccion de dialogos
         escenas[0].dialogos = new Dialogo[1];//cuantos dialogos va a tener
-        escenas[0].dialogos[0] = new Dialogo(m_avatars[1], "You worthless piece\nof scrap metal, did\nyou think you\ncould defeat me?", 4, 0, false);//Creacion del dialogo
-
-        escenas[1].dialogos = new Dialogo[2];//cuantos dialogos va a tener
-        escenas[1].dialogos[0] = new Dialogo(m_avatars[0], "I guess i'm\nnot powerful enough\nto defeat him...", 3, 0, true);////Creacion del dialogo
-        escenas[1].dialogos[1] = new Dialogo(m_avatars[2], "X, you shouldn't\nexpect to defeat him,\nhe is designed to be\na war machine.", 4, 1, true);////Creacion del dialogo
+        escenas[0].dialogos[0] = new Dialogo(m_avatars[1], "Gracias por jugar", 4, 0, false);//Creacion del dialogo
 
     }
 
@@ -88,18 +86,7 @@ public class TextManager : MonoBehaviour
         currentScene = Mathf.Clamp(currentScene, 0, escenas.Length);
         Debug.Log(currentScene);
 
-        if (Input.GetKeyDown(KeyCode.Alpha1)) //aqui poner lo que sea que active el dialogo
-        {
-            m_panel.enabled = false;
-            if (escenas[currentScene].dialogos.Length > 1)
-            {
-                StartCoroutine(createDialog(escenas[currentScene].dialogos[0], false));
-            }
-            else
-            {
-                StartCoroutine(createDialog(escenas[currentScene].dialogos[0], false));
-            }
-        }
+        
 
         if (Input.GetKeyDown(KeyCode.X))
         {
@@ -169,16 +156,16 @@ public class TextManager : MonoBehaviour
     IEnumerator createDialog(Dialogo dialog, bool keepPanel) //indexLine, numero de lineas, avatar(0 mega man, 1 vile, 2 zero). 
     {
         m_text.transform.SetParent(m_canvas.transform);
-        m_text.rectTransform.localScale = Vector2.one;
-        m_flecha.rectTransform.localPosition = new Vector3(71, -dialog.size * 6, 0);
+        //m_text.rectTransform.localScale = Vector2.one;
+       // m_flecha.rectTransform.localPosition = new Vector3(71, -dialog.size * 6, 0);
         //colocar el cuadro de la imagen de quien habla
         if (!dialog.bigPanel)
         {
-            m_avaImg.rectTransform.localPosition = new Vector3(63.4f, 25.8f, 0);
+            //m_avaImg.rectTransform.localPosition = new Vector3(63.4f, 25.8f, 0);
         }
         else//si es un panel grande
         {
-            m_avaImg.rectTransform.localPosition = new Vector3(63.4f, 8.3f, 0);
+           // m_avaImg.rectTransform.localPosition = new Vector3(63.4f, 8.3f, 0);
         }
 
         if (dialog.avatar == m_avatars[0])//si esta hablando mega man ponerlo a la izquierda
@@ -287,4 +274,21 @@ public class TextManager : MonoBehaviour
         endDialog = true;
         canChange = false;
     }
+
+  private void OnTriggerEnter2D(Collider2D collision)
+  {
+    if (collision.gameObject.tag == "Player" && !already)
+    {
+      m_panel.enabled = false;
+      already = true;
+      if (escenas[currentScene].dialogos.Length > 1)
+      {
+        StartCoroutine(createDialog(escenas[currentScene].dialogos[0], false));
+      }
+      else
+      {
+        StartCoroutine(createDialog(escenas[currentScene].dialogos[0], false));
+      }
+    }
+  }
 }
